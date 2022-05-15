@@ -1,1 +1,1 @@
-import './button/button.stories';
+import './components/button/button.stories';
