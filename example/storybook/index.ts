@@ -18,4 +18,8 @@ configure(() => {
 
 // Refer to https://github.com/storybookjs/react-native/tree/master/app/react-native#getstorybookui-options
 // To find allowed options for getStorybookUI
-export const StorybookUIRoot = getStorybookUI({});
+export const StorybookUIRoot = getStorybookUI({
+  asyncStorage: null,
+  tabOpen: -1,
+  disableWebsockets: true,
+});

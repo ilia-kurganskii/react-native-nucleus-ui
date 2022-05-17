@@ -1,0 +1,9 @@
+{
+    "preset": "ts-jest",
+    "testRunner": "jest-circus/runner",
+    "testEnvironment": "./node_modules/detox/runners/jest-circus/environment.js",
+    "testTimeout": 120000,
+    "testRegex": "(/stories/.*|(\\.|/)(e2e))\\.ts?$",
+    "reporters": ["detox/runners/jest/streamlineReporter"],
+    "verbose": true
+}

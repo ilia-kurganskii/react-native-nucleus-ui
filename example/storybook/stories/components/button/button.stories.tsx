@@ -13,6 +13,7 @@ const styleWithMargin: ViewStyle = {
 storiesOf('Button', module)
   .addDecorator((story) => (
     <ScrollView
+      testID="story-view"
       contentContainerStyle={{
         padding: 16,
       }}
@@ -39,12 +40,14 @@ function getButtonsStoryForAppearance(
   return (
     <>
       <Button
+        testID={`${appearance}-default`}
         appearance={appearance}
         onPress={action('clicked-text')}
         style={styleWithMargin}
         title="Default"
       />
       <Button
+        testID={`${appearance}-disabled`}
         appearance={appearance}
         onPress={action('clicked-text')}
         disabled={true}
