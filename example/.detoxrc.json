@@ -1,6 +1,6 @@
 {
   "testRunner": "jest",
-  "runnerConfig": "detox-jest-config.json",
+  "runnerConfig": "detox/jest-config.json",
   "skipLegacyWorkersInjection": true,
   "apps": {
     "ios.release": {

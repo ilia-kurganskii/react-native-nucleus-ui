@@ -52,7 +52,7 @@ function getButtonsStoryForAppearance(
         onPress={action('clicked-text')}
         disabled={true}
         style={styleWithMargin}
-        title="Disabled"
+        title="Disabled2"
       />
     </>
   );

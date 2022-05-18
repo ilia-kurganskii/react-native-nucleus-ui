@@ -1,6 +1,6 @@
 import { device } from 'detox';
+import jestExpect from 'expect';
 
-import { compareScreenshot } from '../../../utils/compare-screenshots';
 describe('Buttons', () => {
   beforeAll(async () => {
     await device.launchApp();
@@ -18,11 +18,9 @@ describe('Buttons', () => {
     });
 
     it('should have default button', async () => {
-      await compareScreenshot(
-        'primary-default',
-        by.id('primary-default'),
-        __dirname
-      );
+      jestExpect(
+        await element(by.id('primary-default')).takeScreenshot('')
+      ).toMatchImageSnapshot();
     });
   });
 });

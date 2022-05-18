@@ -7,6 +7,8 @@ export async function compareScreenshot(
   matcher: Detox.NativeMatcher,
   dirName: string
 ) {
+  // @ts-ignore
+  console.log(this);
   const actualFilePath = await element(matcher).takeScreenshot(
     `${testName}.png`
   );

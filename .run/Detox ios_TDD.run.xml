@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Detox ios:TDD" type="JavaScriptTestRunnerJest">
+    <config-file value="$PROJECT_DIR$/example/detox/jest-config.json" />
+    <node-interpreter value="project" />
+    <node-options value="" />
+    <jest-package value="$PROJECT_DIR$/example/node_modules/jest" />
+    <working-dir value="$PROJECT_DIR$/example" />
+    <envs>
+      <env name="DETOX_CONFIGURATION" value="ios.tdd" />
+    </envs>
+    <scope-kind value="ALL" />
+    <method v="2" />
+  </configuration>
+</component>
