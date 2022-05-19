@@ -9,9 +9,11 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "storybook": "start-storybook -p 7007",
-    "detox:buid:ios": "detox build -c ios",
-    "detox:buid:ios-tdd": "detox build -c ios.tdd",
+    "detox:build:ios": "detox build -c ios",
+    "detox:build:ios-tdd": "detox build -c ios.tdd",
+    "detox:build:android": "detox build -c android",
     "detox:test:ios": "detox test -c ios",
+    "detox:test:android": "detox test -c android",
     "detox:test:ios-tdd": "detox test -c ios.tdd",
     "build-storybook": "build-storybook"
   },

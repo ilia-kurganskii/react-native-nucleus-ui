@@ -141,6 +141,7 @@ android {
         versionCode 1
         versionName "1.0"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
+        missingDimensionStrategy 'detox', 'full'
 
         if (isNewArchitectureEnabled()) {
             // We configure the NDK build only if you decide to opt-in for the New Architecture.
@@ -172,6 +173,8 @@ android {
                 }
             }
         }
+        testBuildType System.getProperty('testBuildType', 'debug')  /* here */
+        testInstrumentationRunner 'com.nucleusuiexample.DetoxTestAppJUnitRunner' /* and here */
     }
 
     if (isNewArchitectureEnabled()) {
@@ -241,6 +244,7 @@ android {
             signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            proguardFile "${rootProject.projectDir}/../node_modules/detox/android/detox/proguard-rules-app.pro"
         }
     }
 
@@ -289,6 +293,10 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+
+    androidTestImplementation('com.wix:detox:+')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    androidTestImplementation 'com.linkedin.testbutler:test-butler-library:2.2.1'
 }
 
 if (isNewArchitectureEnabled()) {
