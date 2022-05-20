@@ -15,8 +15,8 @@
     },
     "android.release": {
       "type": "android.apk",
-      "binaryPath": "android/app/build/outputs/apk/androidTest/release/app-release-androidTest.apk",
-      "build": "cd android ; ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release ; cd -"
+      "binaryPath": "android/app/build/outputs/apk/release/app-release.apk",
+      "build": "cd android && ./gradlew assembleRelease assembleAndroidTest -DtestBuildType=release"
     }
   },
   "devices": {
@@ -29,7 +29,7 @@
     "emulator": {
       "type": "android.emulator",
       "device": {
-        "avdName": "Pixel_3a_API_31_arm64-v8a"
+        "avdName": "Pixel_5_API_30"
       }
     }
   },

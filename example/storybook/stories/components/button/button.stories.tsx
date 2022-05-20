@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from 'react-native-nucleus-ui';
 import type { ViewStyle } from 'react-native';
 import { ScrollView } from 'react-native';
-import type { ValueOf } from '../../../../../lib/typescript/utils';
+import type { ValueOf } from 'react-native-nucleus-ui';
 
 const styleWithMargin: ViewStyle = {
   marginBottom: 15,

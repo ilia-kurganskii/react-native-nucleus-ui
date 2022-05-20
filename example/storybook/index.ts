@@ -7,6 +7,7 @@ import {
 import { withKnobs } from '@storybook/addon-knobs';
 
 import './rn-addons';
+import { Platform } from 'react-native';
 
 // enables knobs for all stories
 addDecorator(withKnobs);
@@ -20,6 +21,10 @@ configure(() => {
 // To find allowed options for getStorybookUI
 export const StorybookUIRoot = getStorybookUI({
   asyncStorage: null,
-  tabOpen: -1,
-  disableWebsockets: true,
+  tabOpen: 0,
+  port: 7007,
+  host: Platform.select({
+    android: '10.0.2.2',
+    ios: 'localhost',
+  }),
 });

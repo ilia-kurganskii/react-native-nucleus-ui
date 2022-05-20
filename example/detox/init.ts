@@ -1,6 +1,7 @@
 import { configureToMatchImageSnapshot } from 'jest-image-snapshot';
 import fs from 'fs';
 import jestExpect from 'expect';
+import { WebSocket } from 'ws';
 
 const toMatchImageSnapshot = configureToMatchImageSnapshot({});
 
@@ -12,3 +13,6 @@ function readFileAndToMatchImageSnapshot(filePath: string, ...args: any[]) {
 jestExpect.extend({
   toMatchImageSnapshot: readFileAndToMatchImageSnapshot,
 });
+
+// @ts-ignore
+global.WebSocket = WebSocket;
