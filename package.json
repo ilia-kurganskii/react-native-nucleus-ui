@@ -79,6 +79,7 @@
   },
   "jest": {
     "preset": "react-native",
+    "testRegex": "\\.spec.(ts|tsx)$",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"

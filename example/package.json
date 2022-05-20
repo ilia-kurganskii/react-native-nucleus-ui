@@ -62,6 +62,7 @@
   },
   "jest": {
     "preset": "react-native",
+    "testRegex": "\\.spec.(ts|tsx)$",
     "moduleFileExtensions": [
       "ts",
       "tsx",

@@ -1,68 +1,140 @@
 version: 2.1
+orbs:
+  macos: circleci/macos@2
+  android: circleci/android@2.0
+  node: circleci/node@5.0
 
 executors:
-  default:
+  node:
     docker:
-      - image: circleci/node:10
-    working_directory: ~/project
-
-commands:
-  attach_project:
-    steps:
-      - attach_workspace:
-          at: ~/project
+      - image: node:14
+  macos:
+    macos:
+      xcode: 13
 
 jobs:
-  install-dependencies:
-    executor: default
+  build-and-test-android-apk:
+    working_directory: ~/project
+    executor:
+      name: android/android-machine
+      tag: 2022.04.1
     steps:
       - checkout
-      - attach_project
-      - restore_cache:
-          keys:
-            - dependencies-{{ checksum "package.json" }}
-            - dependencies-
-      - restore_cache:
-          keys:
-            - dependencies-example-{{ checksum "example/package.json" }}
-            - dependencies-example-
+      - node/install:
+          install-yarn: true
+          node-version: '14.18'
+      - android/create-avd:
+          avd-name: 5.1_WVGA
+          additional-args: --device "5.1in WVGA"
+          install: true
+          system-image: "system-images;android-29;default;x86"
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-version: lib-android-v1
+      - node/install-packages:
+          pkg-manager: yarn
+          app-dir: example
+          cache-version: app-android-v1
+      - android/restore-gradle-cache
+      - android/restore-build-cache
       - run:
-          name: Install dependencies
+          name: "Build android apk"
+          working_directory: "example"
           command: |
-            yarn install --cwd example --frozen-lockfile
-            yarn install --frozen-lockfile
+            yarn detox:build:android
+      - android/start-emulator:
+          avd-name: 5.1_WVGA
+          post-emulator-launch-assemble-command: ""
+          restore-gradle-cache-post-emulator-launch: false
+      - android/save-build-cache
+      - android/save-gradle-cache
+      - run:
+          name: "Test android apk"
+          working_directory: "example"
+          command: |
+            yarn detox:test:android --headless
+
+
+  build-and-test-ios-app:
+    working_directory: ~/project
+    executor: macos
+    steps:
+      - checkout
+      - node/install:
+          install-yarn: true
+          node-version: '14.18'
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-version: lib-macos-v1
+      - node/install-packages:
+          pkg-manager: yarn
+          app-dir: example
+          cache-version: app-macos-v1
+      - restore_cache:
+          keys:
+            - dependencies-macos-example-ios-pods-{{ checksum "example/ios/Podfile.lock" }}
+            - dependencies-macos-example-ios-pods
+      - run:
+          name: "Build ios app"
+          working_directory: "example"
+          command: |
+            yarn detox:build:ios
       - save_cache:
-          key: dependencies-{{ checksum "package.json" }}
-          paths: node_modules
-      - save_cache:
-          key: dependencies-example-{{ checksum "example/package.json" }}
-          paths: example/node_modules
+          key: dependencies-macos-example-pods-{{ checksum "example/ios/Podfile.lock" }}
+          paths:
+            - example/ios/Pods
+      - run:
+          name: "Test ios app"
+          working_directory: "example"
+          command: |
+            yarn detox:test:ios
+
+  install-node-dependencies:
+    executor: node
+    steps:
+      - checkout
+      - node/install-packages:
+          pkg-manager: yarn
+          cache-version: lib-node-v1
+      - node/install-packages:
+          pkg-manager: yarn
+          app-dir: example
+          cache-version: app-node-v1
       - persist_to_workspace:
           root: .
-          paths: .
+          paths:
+            - node_modules
+            - example/node_modules
 
   lint:
-    executor: default
+    executor: node
     steps:
-      - attach_project
+      - checkout
+      - attach_workspace:
+          at: .
       - run:
           name: Lint files
           command: |
             yarn lint
 
+
   typescript:
-    executor: default
+    executor: node
     steps:
-      - attach_project
+      - checkout
+      - attach_workspace:
+          at: .
       - run:
           name: Typecheck files
           command: |
             yarn typescript
 
   unit-tests:
-    executor: default
+    executor: node
     steps:
-      - attach_project
+      - checkout
+      - attach_workspace:
+          at: .
       - run:
           name: Run unit tests
           command: |
@@ -72,27 +144,34 @@ jobs:
           destination: coverage
 
   build-package:
-    executor: default
+    executor: node
     steps:
-      - attach_project
+      - checkout
+      - attach_workspace:
+          at: .
       - run:
           name: Build package
           command: |
             yarn prepare
 
+
 workflows:
-  build-and-test:
+  build-and-test-storybook:
     jobs:
-      - install-dependencies
+      - build-and-test-android-apk
+      - build-and-test-ios-app
+  build-and-test-lib:
+    jobs:
+      - install-node-dependencies
       - lint:
           requires:
-            - install-dependencies
+            - install-node-dependencies
       - typescript:
           requires:
-            - install-dependencies
-      - unit-tests:
-          requires:
-            - install-dependencies
+            - install-node-dependencies
+#      - unit-tests:
+#          requires:
+#            - install-node-dependencies
       - build-package:
           requires:
-            - install-dependencies
+            - install-node-dependencies
