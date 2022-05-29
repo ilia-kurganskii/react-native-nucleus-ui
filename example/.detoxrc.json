@@ -6,12 +6,12 @@
     "ios.release": {
       "type": "ios.app",
       "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/NucleusUiExample.app",
-      "build": "xcodebuild CC=ccache CPLUSPLUS=ccache LD=ccache LDPLUSPLUS=ccache -workspace ios/NucleusUiExample.xcworkspace  -scheme NucleusUiExample -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet"
+      "build": "xcodebuild CC=clang CPLUSPLUS=clang++ LD=clang LDPLUSPLUS=clang++ -workspace ios/NucleusUiExample.xcworkspace  -scheme NucleusUiExample -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet"
     },
     "ios.debug": {
       "type": "ios.app",
       "binaryPath": "ios/build/Build/Products/Debug-iphonesimulator/NucleusUiExample.app",
-      "build": "xcodebuild CC=ccache CPLUSPLUS=ccache LD=ccache LDPLUSPLUS=ccache -workspace ios/NucleusUiExample.xcworkspace  -scheme NucleusUiExample -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build-quiet"
+      "build": "xcodebuild -workspace ios/NucleusUiExample.xcworkspace  -scheme NucleusUiExample -configuration Debug -sdk iphonesimulator -derivedDataPath ios/build-quiet"
     },
     "android.release": {
       "type": "android.apk",
