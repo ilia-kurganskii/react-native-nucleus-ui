@@ -108,6 +108,7 @@ jobs:
         run: |
           brew tap wix/brew
           brew install applesimutils
+          detox build-framework-cache
 
       - name: Download app artifact
         uses: actions/download-artifact@v3
