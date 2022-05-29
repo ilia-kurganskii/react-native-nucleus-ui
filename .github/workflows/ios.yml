@@ -108,7 +108,11 @@ jobs:
         run: |
           brew tap wix/brew
           brew install applesimutils
-          ./example/node_modules/.bin/detox build-framework-cache
+
+      - name: Build detox cache
+        working-directory: example
+        run: |
+          yarn detox:cache
 
       - name: Download app artifact
         uses: actions/download-artifact@v3

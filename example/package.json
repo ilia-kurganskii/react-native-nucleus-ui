@@ -14,7 +14,8 @@
     "detox:build:android": "detox build -c android",
     "detox:test:ios": "detox test -c ios",
     "detox:test:android": "detox test -c android",
-    "detox:test:ios-tdd": "detox test -c ios.tdd"
+    "detox:test:ios-tdd": "detox test -c ios.tdd",
+    "detox:cache": "detox build-framework-cache"
   },
   "dependencies": {
     "react": "17.0.2",
