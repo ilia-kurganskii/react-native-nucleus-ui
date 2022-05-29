@@ -3,10 +3,15 @@
   "runnerConfig": "detox/jest-config.json",
   "skipLegacyWorkersInjection": true,
   "apps": {
-    "ios.release": {
+    "ios.ci": {
       "type": "ios.app",
       "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/NucleusUiExample.app",
       "build": "xcodebuild CC=clang CPLUSPLUS=clang++ LD=clang LDPLUSPLUS=clang++ -workspace ios/NucleusUiExample.xcworkspace  -scheme NucleusUiExample -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet"
+    },
+    "ios.release": {
+      "type": "ios.app",
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/NucleusUiExample.app",
+      "build": "xcodebuild -workspace ios/NucleusUiExample.xcworkspace  -scheme NucleusUiExample -configuration Release -sdk iphonesimulator -derivedDataPath ios/build -quiet"
     },
     "ios.debug": {
       "type": "ios.app",
@@ -37,6 +42,10 @@
     "ios": {
       "device": "simulator",
       "app": "ios.release"
+    },
+    "ios.ci": {
+      "device": "simulator",
+      "app": "ios.ci"
     },
     "ios.tdd": {
       "device": "simulator",

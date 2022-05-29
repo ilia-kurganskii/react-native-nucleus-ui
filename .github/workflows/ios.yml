@@ -58,7 +58,7 @@ jobs:
       - name: Build ios app
         working-directory: example
         run: |
-          yarn detox:build:ios >> ios-build.logs
+          yarn detox:build:ios-ci >> ios-build.logs
 
       - name: Print logs
         if: ${{ failure() }}
@@ -123,6 +123,6 @@ jobs:
       - name: Test ios app
         working-directory: example
         run: |
-          yarn detox:test:ios
+          yarn detox:test:ios-ci
 
 
