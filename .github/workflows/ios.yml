@@ -47,7 +47,7 @@ jobs:
             example/ios/build
           key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
           restore-keys: |
-            ${{ runner.os }}-pods-
+            ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
 
       - name: CocoaPod Install
         if: ${{ steps.cache-pod.outputs.cache-hit == false }}
