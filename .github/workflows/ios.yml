@@ -1,0 +1,128 @@
+name: Build [iOS]
+on:
+  workflow_dispatch: # To trigger manual build
+  push:
+  release:
+    types: [ published ] # only run the workflow when a new release has been published
+
+concurrency:
+  group: ios-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-ios-app:
+    name: Build ios app
+    runs-on: macos-latest
+    steps:
+      - name: Check out Git repository # clone the repo to local ci workspace
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
+
+      - uses: actions/cache@v2
+        name: Cache Node Modules
+        with:
+          path: |
+            node_modules
+            example/node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+      - name: Install yarn dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn install --cwd example --frozen-lockfile
+      - uses: mikehardy/buildcache-action@v1
+      - uses: actions/cache@v2
+        id: cache-pod
+        name: Cache Pod and build files
+        with:
+          path: |
+            example/ios/Pods
+            example/ios/build
+          key: ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-pods-${{ hashFiles('**/Podfile.lock') }}
+
+      - name: CocoaPod Install
+        if: ${{ steps.cache-pod.outputs.cache-hit == false }}
+        working-directory: example/ios
+        run: |
+          pod install
+
+      - name: Build ios app
+        working-directory: example
+        run: |
+          yarn detox:build:ios-ci >> ios-build.logs
+
+      - name: Print logs
+        if: ${{ failure() }}
+        working-directory: example
+        run: |
+          cat ios-build.logs
+
+      - name: Upload app files
+        uses: actions/upload-artifact@v3
+        with:
+          name: ios-app
+          path: example/ios/build/Build/Products/Release-iphonesimulator/NucleusUiExample.app
+
+  test-ios-app:
+    name: Test iOS app
+    runs-on: macos-latest
+    needs:
+      - build-ios-app
+    steps:
+      - name: Check out Git repository # clone the repo to local ci workspace
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
+
+      - uses: actions/cache@v2
+        name: Cache Node Modules
+        with:
+          path: |
+            node_modules
+            example/node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+      - name: Install yarn dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn install --cwd example --frozen-lockfile
+
+      - name: Install detox environment
+        env:
+          HOMEBREW_NO_AUTO_UPDATE: 1
+        run: |
+          brew tap wix/brew
+          brew install applesimutils
+
+      - name: Build detox cache
+        working-directory: example
+        run: |
+          yarn detox:cache
+
+      - name: Download app artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: ios-app
+          path: example/ios/build/Build/Products/Release-iphonesimulator/NucleusUiExample.app
+
+      - name: Test ios app
+        working-directory: example
+        run: |
+          yarn detox:test:ios-ci
+
+
