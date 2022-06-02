@@ -13,10 +13,12 @@
     "detox:build:ios-ci": "detox build -c ios.ci",
     "detox:build:ios-tdd": "detox build -c ios.tdd",
     "detox:build:android": "detox build -c android",
+    "detox:build:android-tdd": "detox build -c android.tdd",
     "detox:test:ios": "detox test -c ios",
     "detox:test:ios-ci": "detox test -c ios.ci",
     "detox:test:android": "detox test -c android",
     "detox:test:ios-tdd": "detox test -c ios.tdd",
+    "detox:test:android-tdd": "detox test -c android.tdd",
     "detox:cache": "detox build-framework-cache"
   },
   "dependencies": {

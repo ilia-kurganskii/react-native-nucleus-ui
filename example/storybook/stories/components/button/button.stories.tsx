@@ -1,23 +1,23 @@
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react-native';
 import React from 'react';
-import { Button } from 'react-native-nucleus-ui';
+import { Button, ValueOf } from 'react-native-nucleus-ui';
 import type { ViewStyle } from 'react-native';
 import { ScrollView } from 'react-native';
-import type { ValueOf } from 'react-native-nucleus-ui';
 
 const styleWithMargin: ViewStyle = {
   marginBottom: 15,
+};
+
+const scrollViewWithPaddingStyle: ViewStyle = {
+  padding: 16,
 };
 
 storiesOf('Button', module)
   .addDecorator((story) => (
     <ScrollView
       testID="story-view"
-      contentContainerStyle={{
-        padding: 16,
-      }}
-      // @ts-ignore
+      contentContainerStyle={scrollViewWithPaddingStyle}
       children={story()}
     />
   ))
