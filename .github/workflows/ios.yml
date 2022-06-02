@@ -1,7 +1,7 @@
 name: Build [iOS]
 on:
   workflow_dispatch: # To trigger manual build
-  push:
+  pull_request:
   release:
     types: [ published ] # only run the workflow when a new release has been published
 
@@ -125,4 +125,10 @@ jobs:
         run: |
           yarn detox:test:ios-ci
 
+      - name: Upload diff screenshots
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots-diffs-ios
+          path: example/**/__diff_output__/*
 
