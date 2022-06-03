@@ -7,6 +7,14 @@ const STORY_IDS = [
   'button--appearances-secondary',
   'button--appearances-outline',
   'button--appearances-transparent',
+
+  'typography--title-1',
+  'typography--title-2',
+  'typography--title-3',
+
+  'typography--regular',
+  'typography--large',
+  'typography--small',
 ];
 
 describe('Screenshots', () => {
