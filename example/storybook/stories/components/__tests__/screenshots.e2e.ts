@@ -38,7 +38,10 @@ describe('Screenshots', () => {
             by.id('story-view')
           ).takeScreenshot('');
 
-          jestExpect(screenshotPath).toMatchImageSnapshot();
+          jestExpect(screenshotPath).toMatchImageSnapshot({
+            failureThreshold: 2,
+            failureThresholdType: 'percent',
+          });
         })
       );
     });
