@@ -1,7 +1,7 @@
 name: Build [Android]
 on:
   workflow_dispatch: # To trigger manual build
-  push:
+  pull_request:
   release:
     types: [ published ] # only run the workflow when a new release has been published
 
@@ -127,6 +127,13 @@ jobs:
           profile: 5.1in WVGA
           avd-name: 5.1_WVGA
           script: cd example &&  yarn detox:test:android --headless
+
+      - name: Upload diff screenshots
+        if: ${{ failure() }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: screenshots-diffs-android
+          path: example/**/__diff_output__/*
 
 
 
