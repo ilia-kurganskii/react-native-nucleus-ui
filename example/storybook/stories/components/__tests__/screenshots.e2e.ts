@@ -3,10 +3,26 @@ import { StoryController } from '../../utils/story-controller';
 import jestExpect from 'expect';
 
 const STORY_IDS = [
-  'button--appearances-primary',
-  'button--appearances-secondary',
-  'button--appearances-outline',
-  'button--appearances-transparent',
+  'button--appearances-primary-large',
+  'button--appearances-primary-block',
+  'button--appearances-primary-small',
+  'button--appearances-secondary-block',
+  'button--appearances-secondary-large',
+  'button--appearances-secondary-small',
+  'button--appearances-outline-block',
+  'button--appearances-outline-large',
+  'button--appearances-outline-small',
+  'button--appearances-transparent-block',
+  'button--appearances-transparent-large',
+  'button--appearances-transparent-small',
+
+  'typography--title-1',
+  'typography--title-2',
+  'typography--title-3',
+
+  'typography--regular',
+  'typography--large',
+  'typography--small',
 ];
 
 describe('Screenshots', () => {
@@ -30,7 +46,10 @@ describe('Screenshots', () => {
             by.id('story-view')
           ).takeScreenshot('');
 
-          jestExpect(screenshotPath).toMatchImageSnapshot();
+          jestExpect(screenshotPath).toMatchImageSnapshot({
+            failureThreshold: 2,
+            failureThresholdType: 'percent',
+          });
         })
       );
     });

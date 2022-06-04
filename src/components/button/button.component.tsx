@@ -1,4 +1,4 @@
-import React, { ReactNode, useState } from 'react';
+import React, { useState } from 'react';
 import {
   Pressable,
   StyleProp,
@@ -7,9 +7,10 @@ import {
   TouchableOpacityProps,
 } from 'react-native';
 import { buttonVars } from './button.vars';
-import { getContainerStyle, getTextStyle } from './button.style';
+import { getContainerStyle, getIconStyle, getTextStyle } from './button.style';
 import { useTheme } from '../../theme/theme.provider';
 import type { ValueOf } from '../../utils';
+import { Icon } from '../icon';
 
 export interface ButtonProps extends TouchableOpacityProps {
   title: string;
@@ -17,20 +18,23 @@ export interface ButtonProps extends TouchableOpacityProps {
   disabled?: boolean;
   appearance?: ValueOf<typeof buttonVars.appearances>;
   size?: ValueOf<typeof buttonVars.sizes>;
-  icon?: () => ReactNode;
-  iconPosition?: 'left' | 'right' | 'side';
+  icon?: ValueOf<typeof Icon.names>;
+  iconPosition?: ValueOf<typeof buttonVars.iconPositions>;
   textStyle?: StyleProp<TextStyle>;
 }
 
 export interface ButtonStatics {
   appearances: typeof buttonVars.appearances;
   sizes: typeof buttonVars.sizes;
+  iconPositions: typeof buttonVars.iconPositions;
 }
 
 function ButtonComponent(props: ButtonProps) {
   const {
     title,
     style,
+    icon,
+    iconPosition = icon ? buttonVars.iconPositions.left : undefined,
     size = buttonVars.sizes.large,
     appearance = buttonVars.appearances.primary,
     disabled,
@@ -40,6 +44,24 @@ function ButtonComponent(props: ButtonProps) {
 
   const [isPressed, setPressed] = useState(false);
   const theme = useTheme();
+
+  const buttonTextStyle = getTextStyle({
+    appearance,
+    theme,
+    isPressed,
+    size,
+    iconPosition,
+    isDisabled: !!disabled,
+  });
+
+  const buttonIconStyle = getIconStyle({
+    appearance,
+    theme,
+    isPressed,
+    size,
+    iconPosition,
+    isDisabled: !!disabled,
+  });
 
   return (
     <Pressable
@@ -51,6 +73,7 @@ function ButtonComponent(props: ButtonProps) {
           appearance,
           theme,
           isPressed,
+          iconPosition,
           isDisabled: !!disabled,
         }),
         style,
@@ -58,19 +81,18 @@ function ButtonComponent(props: ButtonProps) {
       disabled={disabled}
       {...touchableOpacityProps}
     >
-      <Text
-        style={[
-          getTextStyle({
-            appearance,
-            theme,
-            isPressed,
-            isDisabled: !!disabled,
-          }),
-          textStyle,
-        ]}
-      >
-        {title}
-      </Text>
+      {icon && iconPosition === buttonVars.iconPositions.left ? (
+        <Icon name={icon} style={buttonIconStyle} />
+      ) : null}
+
+      {icon && iconPosition === buttonVars.iconPositions.side ? (
+        <Icon name={icon} style={buttonIconStyle} />
+      ) : null}
+      <Text style={[buttonTextStyle, textStyle]}>{title}</Text>
+
+      {icon && iconPosition === buttonVars.iconPositions.right ? (
+        <Icon name={icon} style={buttonIconStyle} />
+      ) : null}
     </Pressable>
   );
 }
