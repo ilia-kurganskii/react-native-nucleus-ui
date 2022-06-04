@@ -179,7 +179,6 @@ const getStyles = createThemedStyleSheet((theme) => ({
   },
 
   icon: {
-    lineHeight: 0,
     textAlign: 'center',
   },
 
