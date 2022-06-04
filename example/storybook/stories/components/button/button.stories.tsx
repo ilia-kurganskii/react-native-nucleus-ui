@@ -46,6 +46,12 @@ storiesOf('Button', module)
       Button.sizes.large
     )
   )
+  .add('Appearances secondary small', () =>
+    getButtonsStoryForAppearance(
+      Button.appearances.secondary,
+      Button.sizes.small
+    )
+  )
   .add('Appearances outline block', () =>
     getButtonsStoryForAppearance(Button.appearances.outline, Button.sizes.block)
   )
