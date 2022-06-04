@@ -82,13 +82,14 @@ function getButtonsStoryForAppearance(
   return (
     <>
       <Button
+        onPress={action('clicked-text')}
         testID={`${appearance}-default`}
         appearance={appearance}
-        onPress={action('clicked-text')}
         style={styleWithMargin}
         title={title}
         size={size}
       />
+
       <Button
         testID={`${appearance}-default`}
         icon="message-circle"
