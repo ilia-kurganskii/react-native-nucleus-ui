@@ -17,6 +17,7 @@
 		F8800A0352D2495C904D7309 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6578ECF9D9934EADA58F4DC9 /* Inter-Bold.ttf */; };
 		835BBDCC81584632B93393AF /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBDBA495DAE442289B5F229E /* Inter-Medium.ttf */; };
 		CF90332DBE2E492CACF03971 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 435ACBADB72B46AC955C63B2 /* Inter-Regular.ttf */; };
+		D3F504A87B7F4CC3B9A0349A /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 231F4DC3E6DC4C9EAC1EED41 /* Feather.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6578ECF9D9934EADA58F4DC9 /* Inter-Bold.ttf */ = {isa = PBXFileReference; name = "Inter-Bold.ttf"; path = "../../fonts/Inter-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CBDBA495DAE442289B5F229E /* Inter-Medium.ttf */ = {isa = PBXFileReference; name = "Inter-Medium.ttf"; path = "../../fonts/Inter-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		435ACBADB72B46AC955C63B2 /* Inter-Regular.ttf */ = {isa = PBXFileReference; name = "Inter-Regular.ttf"; path = "../../fonts/Inter-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		231F4DC3E6DC4C9EAC1EED41 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../../fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				6578ECF9D9934EADA58F4DC9 /* Inter-Bold.ttf */,
 				CBDBA495DAE442289B5F229E /* Inter-Medium.ttf */,
 				435ACBADB72B46AC955C63B2 /* Inter-Regular.ttf */,
+				231F4DC3E6DC4C9EAC1EED41 /* Feather.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				F8800A0352D2495C904D7309 /* Inter-Bold.ttf in Resources */,
 				835BBDCC81584632B93393AF /* Inter-Medium.ttf in Resources */,
 				CF90332DBE2E492CACF03971 /* Inter-Regular.ttf in Resources */,
+				D3F504A87B7F4CC3B9A0349A /* Feather.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

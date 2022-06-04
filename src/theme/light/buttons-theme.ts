@@ -14,8 +14,8 @@ export const ButtonsTheme: ButtonTheme = {
       disabled: Colors.sky.light,
     },
     text: {
-      default: Colors.sky.light,
-      pressed: Colors.sky.light,
+      default: Colors.sky.white,
+      pressed: Colors.sky.white,
       disabled: Colors.sky.dark,
     },
   },
