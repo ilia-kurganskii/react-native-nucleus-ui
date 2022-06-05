@@ -1,6 +1,6 @@
 {
   "name": "react-native-nucleus-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "UI Kit for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -11,6 +11,7 @@
     "src",
     "lib",
     "android",
+    "fonts",
     "ios",
     "cpp",
     "react-native-nucleus-ui.podspec",
@@ -97,7 +98,8 @@
       "tagName": "v${version}"
     },
     "npm": {
-      "publish": true
+      "publish": true,
+      "allowSameVersion": true
     },
     "github": {
       "release": true
