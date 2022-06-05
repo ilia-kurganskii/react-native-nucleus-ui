@@ -1,6 +1,6 @@
 {
   "name": "react-native-nucleus-ui",
-  "version": "0.1.2-beta.0",
+  "version": "0.1.2-beta.1",
   "description": "UI Kit for React Native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
