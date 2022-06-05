@@ -1,3 +1,4 @@
+name: Release new version
 on:
   workflow_dispatch:
     inputs:
@@ -14,13 +15,14 @@ on:
           - premajor
           - prepatch
 
-      pre_release:
-        description: 'Choose channel'
+      channel:
+        description: 'Choose channel for release'
         required: false
         type: choice
+        default: production
         options:
+          - production
           - beta
-          - alpha
 
 jobs:
   release:
@@ -28,15 +30,45 @@ jobs:
     steps:
       - name: Check out Git repository # clone the repo to local ci workspace
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - uses: actions/setup-node@v3
         with:
           node-version: 14
+          registry-url: 'https://registry.npmjs.org'
           cache: 'yarn'
           cache-dependency-path: '**/yarn.lock'
 
+      - uses: actions/cache@v2
+        name: Cache Node Modules
+        with:
+          path: |
+            node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
 
-      - name: Release
+      - name: Install yarn dependencies
         run: |
-          yarn global add release-it
-          release-it -d  --ci --increment=${{ github.event.inputs.version }} --preRelease=${{ github.event.inputs.pre_release }}
+          yarn install --frozen-lockfile
+      - name: Setup git user
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-action"
+
+      - name: Release (production)
+        if: ${{ github.event.inputs.channel == 'production' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          yarn release --ci --increment=${{ github.event.inputs.version }} --no-git
+
+      - name: Release (no-production)
+        if: ${{ github.event.inputs.channel != 'production' }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          yarn release --ci --increment=${{ github.event.inputs.version }} --preRelease=${{ github.event.inputs.channel }} --no-git

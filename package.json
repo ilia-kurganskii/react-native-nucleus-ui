@@ -11,6 +11,7 @@
     "src",
     "lib",
     "android",
+    "fonts",
     "ios",
     "cpp",
     "react-native-nucleus-ui.podspec",
