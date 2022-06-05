@@ -7591,9 +7591,9 @@ plugin-error@^0.1.2:
     extend-shallow "^1.1.2"
 
 pod-install@^0.1.0:
-  version "0.1.34"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.34.tgz#b5c7440c8baef4267d46deddb6bf7b59600e4e31"
-  integrity sha512-XYBgFsOUnQBkBnJVPyVRe9YIk+OsnGSXFiQrvpKqYK/wwkLfmsfMoooIlxvJZOeJdjYRv/59R+HV7Gu9Fw0JNQ==
+  version "0.1.36"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.1.36.tgz#8090f57f76b42acf24c4325711bfa5730613fcab"
+  integrity sha512-r+f2SAqtM4K81Wv4OAhedbfCtBZhPz+1c1CVkQ1vT33PGAhM5A6GpaJ0pfQVgfZ0tUwagWxlDQ3eOprNyIFO6w==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
