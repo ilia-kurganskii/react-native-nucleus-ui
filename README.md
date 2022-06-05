@@ -1,6 +1,4 @@
-# react-native-nucleus-ui
-
-UI Kit for React Native
+![alt text](./cover.png)
 
 ## Installation
 
@@ -11,12 +9,15 @@ npm install react-native-nucleus-ui
 ## Usage
 
 ```js
-import { multiply } from "react-native-nucleus-ui";
+import { Button } from "react-native-nucleus-ui";
 
 // ...
-
-const result = await multiply(3, 7);
+<Button title="Login" size='large' appearance='primart' />
 ```
+
+## Design
+
+https://www.nucleus-ui.com
 
 ## Contributing
 
