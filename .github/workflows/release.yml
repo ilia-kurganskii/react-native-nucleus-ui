@@ -1,0 +1,42 @@
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to increment'
+        required: true
+        default: 'patch'
+        type: choice
+        options:
+          - patch
+          - minor
+          - major
+          - preminor
+          - premajor
+          - prepatch
+
+      pre_release:
+        description: 'Choose channel'
+        required: false
+        type: choice
+        options:
+          - beta
+          - alpha
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Git repository # clone the repo to local ci workspace
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
+
+
+      - name: Release
+        run: |
+          yarn global add release-it
+          release-it -d  --ci --increment=${{ github.event.inputs.version }} --preRelease=${{ github.event.inputs.pre_release }}
