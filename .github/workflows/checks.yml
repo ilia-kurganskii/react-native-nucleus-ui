@@ -1,0 +1,51 @@
+name: Checks
+on:
+  pull_request:
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  run-checks:
+    name: Run checks
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Check out Git repository # clone the repo to local ci workspace
+        uses: actions/checkout@v2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          cache: 'yarn'
+          cache-dependency-path: '**/yarn.lock'
+
+      - uses: actions/cache@v2
+        name: Cache Node Modules
+        with:
+          path: |
+            node_modules
+            example/node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/yarn.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+      - name: Install yarn dependencies
+        run: |
+          yarn install --frozen-lockfile
+          yarn install --cwd example --frozen-lockfile
+
+      - name: Lint
+        run: |
+          yarn lint
+
+      - name: Typescript
+        run: |
+          yarn typescript
+
+      - name: Build
+        run: |
+          yarn prepare
+
+
+
