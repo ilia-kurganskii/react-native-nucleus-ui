@@ -1,7 +1,7 @@
 import type { ButtonTheme } from '../theme.types';
 import { Colors } from '../colors';
 
-export const ButtonsTheme: ButtonTheme = {
+export const buttonTheme: ButtonTheme = {
   primary: {
     background: {
       default: Colors.primary.base,

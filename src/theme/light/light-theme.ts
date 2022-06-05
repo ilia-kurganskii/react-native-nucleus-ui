@@ -1,6 +1,8 @@
 import type { Theme } from '../theme.types';
-import { ButtonsTheme } from './buttons-theme';
+import { buttonTheme } from './buttons-theme';
+import { textFieldTheme } from './text-field-theme';
 
 export let LIGHT_THEME: Theme = {
-  buttons: ButtonsTheme,
+  buttons: buttonTheme,
+  textField: textFieldTheme,
 } as Theme;

@@ -23,6 +23,17 @@ export interface ButtonTheme {
   transparent: ButtonBackgroundAndTextTheme;
 }
 
+export interface TextFieldTheme {
+  borderDefault: string;
+  borderFocused: string;
+  borderError: string;
+  textPlaceholder: string;
+  textDisabled: string;
+  textDefault: string;
+  backgroundDisabled: string;
+}
+
 export interface Theme {
   buttons: ButtonTheme;
+  textField: TextFieldTheme;
 }
