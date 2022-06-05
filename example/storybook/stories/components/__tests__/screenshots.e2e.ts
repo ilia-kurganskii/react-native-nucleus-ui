@@ -16,6 +16,8 @@ const STORY_IDS = [
   'button--appearances-transparent-large',
   'button--appearances-transparent-small',
 
+  'text-field--all',
+
   'typography--title-1',
   'typography--title-2',
   'typography--title-3',

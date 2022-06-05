@@ -1,6 +1,10 @@
 export const Colors = {
   ink: {
     lighter: '#72777A',
+    darkest: '#090A0A',
+  },
+  red: {
+    base: '#FF5247',
   },
   primary: {
     lightest: '#E7E7FF',
@@ -13,6 +17,7 @@ export const Colors = {
   sky: {
     white: '#FFFFFF',
     light: '#E3E5E5',
+    lighter: '#F2F4F5',
     base: '#CDCFD0',
     dark: '#979C9E',
   },
