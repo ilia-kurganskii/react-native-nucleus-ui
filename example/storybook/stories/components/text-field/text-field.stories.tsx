@@ -19,6 +19,7 @@ storiesOf('Text field', module)
   .addDecorator((story) => (
     <ScrollView
       contentContainerStyle={scrollViewWithPaddingStyle}
+      // @ts-ignore
       children={story()}
     />
   ))
