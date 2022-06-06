@@ -20,8 +20,8 @@ const scrollViewWithPaddingStyle: ViewStyle = {
 storiesOf('Button', module)
   .addDecorator((story) => (
     <ScrollView
-      testID="story-view"
       contentContainerStyle={scrollViewWithPaddingStyle}
+      // @ts-ignore
       children={story()}
     />
   ))
