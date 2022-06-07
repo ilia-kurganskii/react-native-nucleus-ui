@@ -1,6 +1,7 @@
 import Events from '@storybook/core-events';
 import createChannel from '@storybook/channel-websocket';
 import { BroadcastServer } from './boadcast-server';
+import { ThemeEvents } from '../../addons/theme-switcher/constants';
 
 export class StoryController {
   private channel?: ReturnType<typeof createChannel>;
@@ -16,6 +17,13 @@ export class StoryController {
       url: `ws://localhost:${this.port}`,
       async: false,
       onError: (message) => console.log('ERROR: ' + message),
+    });
+  };
+
+  setTheme = (themeValue: string) => {
+    return new Promise<void>((resolve) => {
+      this.channel?.emit(ThemeEvents.UPDATE_THEME, themeValue);
+      resolve();
     });
   };
 

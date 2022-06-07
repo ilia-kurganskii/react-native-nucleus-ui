@@ -1,7 +1,11 @@
 export const Colors = {
   ink: {
+    light: '#6C7072',
     lighter: '#72777A',
+    dark: '#303437',
+    darker: '#202325',
     darkest: '#090A0A',
+    base: '#404446',
   },
   red: {
     base: '#FF5247',

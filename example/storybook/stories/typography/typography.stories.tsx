@@ -2,32 +2,33 @@ import { storiesOf } from '@storybook/react-native';
 import React from 'react';
 import type { TextStyle, ViewStyle } from 'react-native';
 import { ScrollView, Text } from 'react-native';
-import { TypographyPresets } from 'react-native-nucleus-ui';
+import { Colors, TypographyPresets } from 'react-native-nucleus-ui';
 
 const scrollViewWithPaddingStyle: ViewStyle = {
   padding: 16,
 };
 
-const textMarginStyle: TextStyle = {
+const textStyle: TextStyle = {
   marginBottom: 16,
+  color: Colors.primary.base,
 };
 
 storiesOf('Typography', module)
   .addDecorator((story) => (
     <ScrollView
-      testID="story-view"
       contentContainerStyle={scrollViewWithPaddingStyle}
+      // @ts-ignore
       children={story()}
     />
   ))
   .add('Title 1', () => (
-    <Text style={[TypographyPresets.Title1, textMarginStyle]}>Title 1</Text>
+    <Text style={[TypographyPresets.Title1, textStyle]}>Title 1</Text>
   ))
   .add('Title 2', () => (
-    <Text style={[TypographyPresets.Title2, textMarginStyle]}>Title 2</Text>
+    <Text style={[TypographyPresets.Title2, textStyle]}>Title 2</Text>
   ))
   .add('Title 3', () => (
-    <Text style={[TypographyPresets.Title3, textMarginStyle]}>Title 3</Text>
+    <Text style={[TypographyPresets.Title3, textStyle]}>Title 3</Text>
   ))
   .add('Regular', () => (
     <>
@@ -75,11 +76,9 @@ function getBoldMediumRegularText(
 ) {
   return (
     <>
-      <Text style={[preset.Bold, textMarginStyle]}>{`${prefix}/Bold`}</Text>
-      <Text style={[preset.Medium, textMarginStyle]}>{`${prefix}/Medium`}</Text>
-      <Text
-        style={[preset.Regular, textMarginStyle]}
-      >{`${prefix}/Regular`}</Text>
+      <Text style={[preset.Bold, textStyle]}>{`${prefix}/Bold`}</Text>
+      <Text style={[preset.Medium, textStyle]}>{`${prefix}/Medium`}</Text>
+      <Text style={[preset.Regular, textStyle]}>{`${prefix}/Regular`}</Text>
     </>
   );
 }

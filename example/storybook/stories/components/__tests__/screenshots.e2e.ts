@@ -40,20 +40,23 @@ describe('Screenshots', () => {
   });
 
   return [':ios:', ':android:'].forEach((typeOS) => {
-    describe(`${typeOS}`, () => {
-      STORY_IDS.forEach((storyId) =>
-        it(`Story: ${storyId}`, async () => {
-          await storyController.setStory(storyId);
-          const screenshotPath = await element(
-            by.id('story-view')
-          ).takeScreenshot('');
+    ['dark', 'light'].forEach((theme) => {
+      describe(`${typeOS} - ${theme}`, () => {
+        STORY_IDS.forEach((storyId) =>
+          it(`Story: ${storyId}`, async () => {
+            await storyController.setStory(storyId);
+            await storyController.setTheme(theme);
+            const screenshotPath = await element(
+              by.id('story-view')
+            ).takeScreenshot('');
 
-          jestExpect(screenshotPath).toMatchImageSnapshot({
-            failureThreshold: 2,
-            failureThresholdType: 'percent',
-          });
-        })
-      );
+            jestExpect(screenshotPath).toMatchImageSnapshot({
+              failureThreshold: 2,
+              failureThresholdType: 'percent',
+            });
+          })
+        );
+      });
     });
   });
 });

@@ -33,7 +33,17 @@ export interface TextFieldTheme {
   backgroundDisabled: string;
 }
 
+export interface BackgroundTheme {
+  base: string;
+}
+
+export interface TextTheme {
+  base: string;
+}
+
 export interface Theme {
   buttons: ButtonTheme;
   textField: TextFieldTheme;
+  background: BackgroundTheme;
+  text: TextTheme;
 }
