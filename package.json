@@ -14,6 +14,7 @@
     "fonts",
     "ios",
     "cpp",
+    "react-native.config.js",
     "react-native-nucleus-ui.podspec",
     "!lib/typescript/example",
     "!android/build",
