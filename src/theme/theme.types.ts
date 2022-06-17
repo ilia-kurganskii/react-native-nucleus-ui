@@ -42,8 +42,11 @@ export interface TextTheme {
 }
 
 export interface Theme {
+  type: 'dark' | 'light' | string;
   buttons: ButtonTheme;
   textField: TextFieldTheme;
   background: BackgroundTheme;
   text: TextTheme;
 }
+export interface DefaultExtendedTheme {}
+export type ExtendedTheme<T = DefaultExtendedTheme> = T & Theme;
