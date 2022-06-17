@@ -17,11 +17,20 @@ export function createThemedStyleSheet<
 export function extendTheme<D extends object>(
   theme: Theme,
   extendedThemeMap: {
-    [key: string]: D;
+    [key: 'dark' | 'light' | string]: D;
   }
 ): ExtendedTheme<D> {
   return {
     ...theme,
     ...extendedThemeMap[theme.type],
   };
+}
+
+export function selectByTheme<T>(
+  theme: Theme,
+  options: {
+    [key: 'dark' | 'light' | string]: T;
+  }
+) {
+  return options[theme.type];
 }
