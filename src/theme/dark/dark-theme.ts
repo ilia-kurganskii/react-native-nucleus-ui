@@ -4,6 +4,7 @@ import { textFieldTheme } from './text-field-theme';
 import { Colors } from '../colors';
 
 export let DARK_THEME: Theme = {
+  type: 'dark',
   buttons: buttonTheme,
   textField: textFieldTheme,
   background: {
