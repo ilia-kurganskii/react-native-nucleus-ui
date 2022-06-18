@@ -2011,15 +2011,14 @@
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-plugin/-/eslint-plugin-1.2.0.tgz#7d6d789ae8edf73dc9bed1246cd48277edea8066"
   integrity sha512-o6aam+0Ug1xGK3ABYmBm0B1YuEKfM/5kaoZO0eHbZwSpw9UzDX4G5y4Nx/K20FHqUmJHkZmLvOUFYwN4N+HqKA==
 
-"@release-it/conventional-changelog@^2.0.0":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-2.0.1.tgz#bdd52ad3ecc0d6e39d637592d6ea2bd6d28e5ecb"
-  integrity sha512-q67D3Jod935kZt6wThsDeOmhY+RWYPMY7nYyl0YxiXK8vVZzD+9z957fXGz+8Uk3iugmgDaucht7VxTaZlu6nA==
+"@release-it/conventional-changelog@^4.3.0":
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/@release-it/conventional-changelog/-/conventional-changelog-4.3.0.tgz#a7758d7169ae5cdf4db15778f47844aa80b3fc08"
+  integrity sha512-SAdattAPXyxADh+cWbNqlk7OBWh/SskYCj0hAb5VPmm/wrIR1dQrlKpsUQ/7O0WGGe7uhvj4YB8kVTIZipcc9w==
   dependencies:
     concat-stream "^2.0.0"
-    conventional-changelog "^3.1.24"
+    conventional-changelog "^3.1.25"
     conventional-recommended-bump "^6.1.0"
-    prepend-file "^2.0.0"
 
 "@sinclair/typebox@^0.23.3":
   version "0.23.5"
@@ -3623,7 +3622,7 @@ conventional-changelog-writer@^5.0.0:
     split "^1.0.0"
     through2 "^4.0.0"
 
-conventional-changelog@^3.1.24:
+conventional-changelog@^3.1.25:
   version "3.1.25"
   resolved "https://registry.yarnpkg.com/conventional-changelog/-/conventional-changelog-3.1.25.tgz#3e227a37d15684f5aa1fb52222a6e9e2536ccaff"
   integrity sha512-ryhi3fd1mKf3fSjbLXOfK2D06YwKNic1nC9mWqybBHdObPd8KJ2vjaXZfYj1U23t+V8T8n0d7gwnc9XbIdFbyQ==
@@ -7833,13 +7832,6 @@ prelude-ls@~1.1.2:
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
 
-prepend-file@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/prepend-file/-/prepend-file-2.0.1.tgz#6a624b474a65ab1f87dc24d1757d5a6d989eb2db"
-  integrity sha512-0hXWjmOpz5YBIk6xujS0lYtCw6IAA0wCR3fw49UGTLc3E9BIhcxgqdMa8rzGvrtt2F8wFiGP42oEpQ8fo9zhRw==
-  dependencies:
-    temp-write "^4.0.0"
-
 prepend-http@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/prepend-http/-/prepend-http-2.0.0.tgz#e92434bfa5ea8c19f41cdfd401d741a3c819d897"
@@ -9221,22 +9213,6 @@ table@^6.0.9:
     slice-ansi "^4.0.0"
     string-width "^4.2.3"
     strip-ansi "^6.0.1"
-
-temp-dir@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/temp-dir/-/temp-dir-1.0.0.tgz#0a7c0ea26d3a39afa7e0ebea9c1fc0bc4daa011d"
-  integrity sha1-CnwOom06Oa+n4OvqnB/AvE2qAR0=
-
-temp-write@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/temp-write/-/temp-write-4.0.0.tgz#cd2e0825fc826ae72d201dc26eef3bf7e6fc9320"
-  integrity sha512-HIeWmj77uOOHb0QX7siN3OtwV3CTntquin6TNVg6SHOqCP3hYKmox90eeFOGaY1MqJ9WYDDjkyZrW6qS5AWpbw==
-  dependencies:
-    graceful-fs "^4.1.15"
-    is-stream "^2.0.0"
-    make-dir "^3.0.0"
-    temp-dir "^1.0.0"
-    uuid "^3.3.2"
 
 temp@0.8.3:
   version "0.8.3"
