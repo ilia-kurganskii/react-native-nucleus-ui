@@ -62,7 +62,7 @@
     "@typescript-eslint/parser": "^5.17.0",
     "babel-jest": "^28.1.1",
     "commitlint": "^17.0.2",
-    "eslint": "^7.2.0",
+    "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "husky": "^6.0.0",
