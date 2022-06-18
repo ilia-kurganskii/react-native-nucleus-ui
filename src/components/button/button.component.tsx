@@ -5,12 +5,12 @@ import {
   Text,
   TextStyle,
   TouchableOpacityProps,
+  View,
 } from 'react-native';
 import { buttonVars } from './button.vars';
 import { getContainerStyle, getIconStyle, getTextStyle } from './button.style';
-import { useTheme } from '../../theme/theme.provider';
+import { useTheme, Icon } from 'react-native-nucleus-ui';
 import type { ValueOf } from '../../utils';
-import { Icon } from '../icon';
 
 export interface ButtonProps extends TouchableOpacityProps {
   title: string;
@@ -29,7 +29,7 @@ export interface ButtonStatics {
   iconPositions: typeof buttonVars.iconPositions;
 }
 
-function ButtonComponent(props: ButtonProps) {
+const ButtonComponent = React.forwardRef<View, ButtonProps>((props, ref) => {
   const {
     title,
     style,
@@ -65,6 +65,7 @@ function ButtonComponent(props: ButtonProps) {
 
   return (
     <Pressable
+      ref={ref}
       onPressIn={() => setPressed(true)}
       onPressOut={() => setPressed(false)}
       style={[
@@ -95,7 +96,7 @@ function ButtonComponent(props: ButtonProps) {
       ) : null}
     </Pressable>
   );
-}
+});
 
 const Button = React.memo(ButtonComponent) as React.MemoExoticComponent<
   typeof ButtonComponent

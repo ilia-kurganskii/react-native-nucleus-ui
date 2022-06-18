@@ -13,7 +13,7 @@ export interface IconStatics {
   names: typeof iconVars.names;
 }
 
-function IconComponent(props: IconProps) {
+const IconComponent = React.forwardRef<Text, IconProps>((props, ref) => {
   const { name, style, ...textProps } = props;
 
   let glyph = name ? iconNameToGlyphMap[name] ?? '?' : '?';
@@ -22,11 +22,16 @@ function IconComponent(props: IconProps) {
   }
 
   return (
-    <Text selectable={false} style={[style, iconStyles.icon]} {...textProps}>
+    <Text
+      ref={ref}
+      selectable={false}
+      style={[style, iconStyles.icon]}
+      {...textProps}
+    >
       {glyph}
     </Text>
   );
-}
+});
 
 const Icon = React.memo(IconComponent) as React.MemoExoticComponent<
   typeof IconComponent
