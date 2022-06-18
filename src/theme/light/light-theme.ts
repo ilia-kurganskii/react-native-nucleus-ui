@@ -4,6 +4,7 @@ import { textFieldTheme } from './text-field-theme';
 import { Colors } from '../colors';
 
 export let LIGHT_THEME: Theme = {
+  type: 'light',
   buttons: buttonTheme,
   textField: textFieldTheme,
   background: {
@@ -11,5 +12,9 @@ export let LIGHT_THEME: Theme = {
   },
   text: {
     base: Colors.ink.darkest,
+  },
+  pageControls: {
+    backgroundDefault: Colors.sky.light,
+    backgroundSelected: Colors.primary.base,
   },
 };

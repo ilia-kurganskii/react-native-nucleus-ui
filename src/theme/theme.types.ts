@@ -1,8 +1,4 @@
-export interface UpDownDefault {
-  up: string;
-  down: string;
-  default: string;
-}
+import type { ColorValue } from 'react-native';
 
 interface ButtonStateColors {
   default: string;
@@ -24,7 +20,7 @@ export interface ButtonTheme {
 }
 
 export interface TextFieldTheme {
-  borderDefault: string;
+  borderDefault: ColorValue;
   borderFocused: string;
   borderError: string;
   textPlaceholder: string;
@@ -41,9 +37,18 @@ export interface TextTheme {
   base: string;
 }
 
+export interface PageControlsTheme {
+  backgroundDefault: string;
+  backgroundSelected: string;
+}
+
 export interface Theme {
+  type: 'dark' | 'light' | string;
   buttons: ButtonTheme;
   textField: TextFieldTheme;
   background: BackgroundTheme;
   text: TextTheme;
+  pageControls: PageControlsTheme;
 }
+export interface DefaultExtendedTheme {}
+export type ExtendedTheme<T = DefaultExtendedTheme> = T & Theme;
