@@ -13,4 +13,8 @@ export let DARK_THEME: Theme = {
   text: {
     base: Colors.sky.white,
   },
+  pageControls: {
+    backgroundDefault: Colors.ink.light,
+    backgroundSelected: Colors.sky.white,
+  },
 };
