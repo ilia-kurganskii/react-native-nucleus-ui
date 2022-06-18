@@ -25,6 +25,8 @@ const STORY_IDS = [
   'typography--regular',
   'typography--large',
   'typography--small',
+
+  'page-controls--all',
 ];
 
 describe('Screenshots', () => {
