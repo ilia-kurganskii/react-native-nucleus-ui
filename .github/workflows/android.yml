@@ -2,8 +2,9 @@ name: Build [Android]
 on:
   workflow_dispatch: # To trigger manual build
   pull_request:
-  release:
-    types: [ published ] # only run the workflow when a new release has been published
+  push:
+    branches:
+      - master
 
 concurrency:
   group: android-${{ github.ref }}
