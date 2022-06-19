@@ -17,4 +17,9 @@ export let DARK_THEME: Theme = {
     backgroundDefault: Colors.ink.light,
     backgroundSelected: Colors.sky.white,
   },
+  popover: {
+    background: Colors.ink.darker,
+    textMessage: Colors.sky.dark,
+    textTitle: Colors.sky.white,
+  },
 };

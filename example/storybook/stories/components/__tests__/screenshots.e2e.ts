@@ -27,6 +27,9 @@ const STORY_IDS = [
   'typography--small',
 
   'page-controls--all',
+
+  'popover--one-button',
+  'popover--two-buttons',
 ];
 
 describe('Screenshots', () => {

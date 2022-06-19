@@ -42,6 +42,12 @@ export interface PageControlsTheme {
   backgroundSelected: string;
 }
 
+export interface PopoverTheme {
+  background: string;
+  textTitle: string;
+  textMessage: string;
+}
+
 export interface Theme {
   type: 'dark' | 'light' | string;
   buttons: ButtonTheme;
@@ -49,6 +55,7 @@ export interface Theme {
   background: BackgroundTheme;
   text: TextTheme;
   pageControls: PageControlsTheme;
+  popover: PopoverTheme;
 }
 export interface DefaultExtendedTheme {}
 export type ExtendedTheme<T = DefaultExtendedTheme> = T & Theme;
