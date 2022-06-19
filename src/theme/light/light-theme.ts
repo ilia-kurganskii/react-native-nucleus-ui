@@ -17,4 +17,9 @@ export let LIGHT_THEME: Theme = {
     backgroundDefault: Colors.sky.light,
     backgroundSelected: Colors.primary.base,
   },
+  popover: {
+    background: Colors.sky.white,
+    textMessage: Colors.ink.lighter,
+    textTitle: Colors.ink.darkest,
+  },
 };
