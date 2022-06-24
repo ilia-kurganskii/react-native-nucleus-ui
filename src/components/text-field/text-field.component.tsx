@@ -6,7 +6,7 @@ import { useTheme } from 'react-native-nucleus-ui';
 import { useExtendCallback } from '../../utils/use-extend-callback';
 
 interface TextFieldComponentProps extends TextInputProps {
-  error?: true;
+  error?: boolean;
 }
 
 const TextFieldComponent = React.forwardRef<TextInput, TextFieldComponentProps>(
