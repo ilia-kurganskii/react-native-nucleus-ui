@@ -30,7 +30,7 @@
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/runtime": "^7.18.3",
-    "@react-native-community/eslint-config": "^3.0.2",
+    "@react-native-community/eslint-config": "^3.0.3",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-knobs": "^6.4.0",
     "@storybook/addon-links": "^6.5.9",
