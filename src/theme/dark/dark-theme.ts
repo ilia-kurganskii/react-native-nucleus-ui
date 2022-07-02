@@ -22,4 +22,8 @@ export let DARK_THEME: Theme = {
     textMessage: Colors.sky.dark,
     textTitle: Colors.sky.white,
   },
+  progressBar: {
+    background: Colors.ink.darker,
+    bar: Colors.primary.base,
+  },
 };

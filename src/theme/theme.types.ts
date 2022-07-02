@@ -48,6 +48,11 @@ export interface PopoverTheme {
   textMessage: string;
 }
 
+export interface ProgressBarTheme {
+  background: string;
+  bar: string;
+}
+
 export interface Theme {
   type: 'dark' | 'light' | string;
   buttons: ButtonTheme;
@@ -56,6 +61,7 @@ export interface Theme {
   text: TextTheme;
   pageControls: PageControlsTheme;
   popover: PopoverTheme;
+  progressBar: ProgressBarTheme;
 }
 export interface DefaultExtendedTheme {}
 export type ExtendedTheme<T = DefaultExtendedTheme> = T & Theme;
