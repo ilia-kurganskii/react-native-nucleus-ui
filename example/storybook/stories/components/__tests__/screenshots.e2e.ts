@@ -30,6 +30,8 @@ const STORY_IDS = [
 
   'popover--one-button',
   'popover--two-buttons',
+
+  'progress-bar--all',
 ];
 
 describe('Screenshots', () => {
