@@ -6,6 +6,7 @@ import { getPopoverStyles } from './popover.style';
 export interface PopoverButtonProps {
   title: string;
   onPress: () => void;
+  testID?: string;
 }
 
 export interface PopoverProps {
@@ -25,6 +26,7 @@ function PopoverComponent(props: PopoverProps) {
       <Text style={styles.message}>{message}</Text>
       {actionButton ? (
         <Button
+          testID={actionButton.testID}
           size={Button.sizes.block}
           style={styles.actionButton}
           title={actionButton.title}
@@ -33,6 +35,7 @@ function PopoverComponent(props: PopoverProps) {
       ) : null}
       {cancelButton ? (
         <Button
+          testID={cancelButton.testID}
           size={Button.sizes.block}
           appearance={Button.appearances.transparent}
           style={styles.cancelButton}
