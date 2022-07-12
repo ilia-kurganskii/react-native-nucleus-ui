@@ -44,7 +44,7 @@
     "@types/pixelmatch": "^5.2.4",
     "@types/react-native": "^0.67.8",
     "@types/react-test-renderer": "^17.0.2",
-    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/eslint-plugin": "^5.30.6",
     "@typescript-eslint/parser": "^5.30.5",
     "babel-jest": "^28.1.2",
     "babel-loader": "^8.2.5",
