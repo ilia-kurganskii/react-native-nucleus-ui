@@ -46,8 +46,8 @@ jobs:
 
       - name: Install yarn dependencies
         run: |
-          yarn install --frozen-lockfile
-          yarn install --cwd example --frozen-lockfile
+          yarn install
+          yarn install --cwd example
 
       - name: Build android app
         working-directory: example
@@ -114,8 +114,8 @@ jobs:
 
       - name: Install yarn dependencies
         run: |
-          yarn install --frozen-lockfile
-          yarn install --cwd example --frozen-lockfile
+          yarn install
+          yarn install --cwd example
 
 
       - name: Test android app

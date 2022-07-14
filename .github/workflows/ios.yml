@@ -36,8 +36,8 @@ jobs:
 
       - name: Install yarn dependencies
         run: |
-          yarn install --frozen-lockfile
-          yarn install --cwd example --frozen-lockfile
+          yarn install
+          yarn install --cwd example
       - uses: mikehardy/buildcache-action@v1
       - uses: actions/cache@v2
         id: cache-pod
@@ -100,8 +100,8 @@ jobs:
 
       - name: Install yarn dependencies
         run: |
-          yarn install --frozen-lockfile
-          yarn install --cwd example --frozen-lockfile
+          yarn install
+          yarn install --cwd example
 
       - name: Install detox environment
         env:
