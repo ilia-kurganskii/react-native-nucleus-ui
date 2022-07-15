@@ -55,7 +55,7 @@
     "@release-it/conventional-changelog": "5.0.0",
     "@types/jest": "28.1.5",
     "@types/react": "17.0.47",
-    "@types/react-native": "0.67.8",
+    "@types/react-native": "0.67.12",
     "@types/react-test-renderer": "17.0.2",
     "@types/ws": "8.5.3",
     "@typescript-eslint/eslint-plugin": "5.30.5",
