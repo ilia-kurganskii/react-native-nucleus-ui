@@ -4,3 +4,4 @@ export * from './icon';
 export * from './page-controls';
 export * from './popover';
 export * from './progress-bar';
+export * from './chip';
