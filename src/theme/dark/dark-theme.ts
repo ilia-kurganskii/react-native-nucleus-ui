@@ -26,4 +26,10 @@ export let DARK_THEME: Theme = {
     background: Colors.ink.darker,
     bar: Colors.primary.base,
   },
+  chip: {
+    background: Colors.ink.dark,
+    text: Colors.sky.white,
+    selectedBackground: Colors.primary.base,
+    selectedText: Colors.sky.white,
+  },
 };

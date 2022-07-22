@@ -53,6 +53,13 @@ export interface ProgressBarTheme {
   bar: string;
 }
 
+export interface ChipTheme {
+  background: string;
+  text: string;
+  selectedBackground: string;
+  selectedText: string;
+}
+
 export interface Theme {
   type: 'dark' | 'light' | string;
   buttons: ButtonTheme;
@@ -62,6 +69,7 @@ export interface Theme {
   pageControls: PageControlsTheme;
   popover: PopoverTheme;
   progressBar: ProgressBarTheme;
+  chip: ChipTheme;
 }
 export interface DefaultExtendedTheme {}
 export type ExtendedTheme<T = DefaultExtendedTheme> = T & Theme;

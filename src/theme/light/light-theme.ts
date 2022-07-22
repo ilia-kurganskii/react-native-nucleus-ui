@@ -26,4 +26,10 @@ export let LIGHT_THEME: Theme = {
     background: Colors.sky.lighter,
     bar: Colors.primary.base,
   },
+  chip: {
+    background: Colors.sky.lighter,
+    text: Colors.ink.darkest,
+    selectedBackground: Colors.primary.lightest,
+    selectedText: Colors.primary.base,
+  },
 };

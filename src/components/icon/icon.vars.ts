@@ -289,10 +289,10 @@ export const iconNameToGlyphMap = {
   'zoom-out': 61981,
 };
 
+const keys = Object.keys(
+  iconNameToGlyphMap
+) as unknown as (keyof typeof iconNameToGlyphMap)[];
+
 export const iconVars = {
-  names: keyMirror(
-    Object.keys(
-      iconNameToGlyphMap
-    ) as unknown as keyof typeof iconNameToGlyphMap
-  ),
+  names: keyMirror(...keys),
 };
