@@ -52,7 +52,7 @@ jobs:
 
       - name: Install yarn dependencies
         run: |
-          yarn install
+          yarn install --frozen-lockfile
       - name: Setup git user
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

@@ -100,8 +100,8 @@ jobs:
 
       - name: Install yarn dependencies
         run: |
-          yarn install
-          yarn install --cwd example
+          yarn install --frozen-lockfile
+          yarn install --cwd example --frozen-lockfile
 
       - name: Install detox environment
         env:
