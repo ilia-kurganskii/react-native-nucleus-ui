@@ -28,7 +28,7 @@
     "react-native": "0.68.2"
   },
   "devDependencies": {
-    "@babel/core": "7.18.9",
+    "@babel/core": "7.18.10",
     "@babel/runtime": "7.18.9",
     "@react-native-community/eslint-config": "3.1.0",
     "@storybook/addon-actions": "6.5.9",
