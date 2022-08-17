@@ -52,7 +52,7 @@
   "devDependencies": {
     "@commitlint/config-conventional": "17.0.3",
     "@react-native-community/eslint-config": "3.1.0",
-    "@release-it/conventional-changelog": "5.0.0",
+    "@release-it/conventional-changelog": "5.1.0",
     "@types/jest": "28.1.7",
     "@types/react": "17.0.48",
     "@types/react-native": "0.67.12",
