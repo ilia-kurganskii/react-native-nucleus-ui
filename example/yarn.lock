@@ -7699,10 +7699,10 @@ jest-haste-map@^29.3.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-jest-image-snapshot@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-6.0.0.tgz#e3c9df49bda8d5b05bda4b91d67cf99b790f7b99"
-  integrity sha512-1oD6XRBXHcQ8ranC/mpJmvofgIqB5L4CEObhQ5lpXPP3nPtruJJxjQlbvk/Zv9Io0/qDj5ZXFujNCNfeC/r/wg==
+jest-image-snapshot@6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-6.1.0.tgz#96a17b00530e1358eae657f6c9bb948e29ee7510"
+  integrity sha512-LZYoks6V1HAkYqyi80gUjMWVsa++Oy0fckAGMLBQseVweZT9AmJNKAINwHLqX1fpeMy2hTG5CCEe4IUX2N3Nmg==
   dependencies:
     chalk "^4.0.0"
     get-stdin "^5.0.1"
