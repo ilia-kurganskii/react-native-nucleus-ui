@@ -2439,10 +2439,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest-image-snapshot@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@types/jest-image-snapshot/-/jest-image-snapshot-5.1.0.tgz#aa355ec40625fcb338fd31c935791bc8fde72bcf"
-  integrity sha512-pfCz6dclA8mDxwXN/x/PuYBCPwzGuYcTfOVZvDAikC1GLXg/CwECF9UgtWse0tR42c6OaL7LPEnN7i/Dm86KkQ==
+"@types/jest-image-snapshot@6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@types/jest-image-snapshot/-/jest-image-snapshot-6.1.0.tgz#d74176821cbdf24458f39819743e9adb3d3146e9"
+  integrity sha512-wYayjKQGdI0ZbmsAq7OPt+5wMMi1CDXXkF3LfoGj4eRC0dOqlYJdXqLwfC89Qf2apQdlL9StgCkw0iTDb8lpUw==
   dependencies:
     "@types/jest" "*"
     "@types/pixelmatch" "*"
