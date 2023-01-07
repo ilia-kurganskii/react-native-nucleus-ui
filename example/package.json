@@ -28,7 +28,7 @@
     "react-native": "0.68.2"
   },
   "devDependencies": {
-    "@babel/core": "7.20.7",
+    "@babel/core": "7.20.12",
     "@babel/runtime": "7.20.7",
     "@react-native-community/eslint-config": "3.2.0",
     "@storybook/addon-actions": "6.5.15",
@@ -47,7 +47,7 @@
     "@typescript-eslint/eslint-plugin": "5.48.0",
     "@typescript-eslint/parser": "5.48.0",
     "babel-jest": "29.3.1",
-    "babel-loader": "9.1.0",
+    "babel-loader": "9.1.2",
     "babel-plugin-module-resolver": "4.1.0",
     "detox": "19.13.0",
     "eslint": "8.31.0",
