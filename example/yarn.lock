@@ -1910,14 +1910,13 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-ondevice-actions@5.3.23":
-  version "5.3.23"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-5.3.23.tgz#0c7c7403cb7c6cb30e492b83b0e9d616f02c4b12"
-  integrity sha512-GntACUPYGSh2d5fWIFMO6iXuGLKaJPVXNb5EsAJRj6UaIjeq0yWQNANowBbv0yXjJwooHiIITTNcYSzh/1AvWg==
+"@storybook/addon-ondevice-actions@6.5.1":
+  version "6.5.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.1.tgz#6f4903d16dfab83727f963d58597b8c5bdae9f38"
+  integrity sha512-dyKErK97sT+cd5ApGSYHQokMK+GHLaucrJ/LhHtPxWwMHulaV17Pyzbb8FE550DF3YNXjkcZZjMMJlc/1QmgCQ==
   dependencies:
-    "@storybook/addons" "5.3.21"
-    "@storybook/core-events" "5.3.21"
-    core-js "^3.0.1"
+    "@storybook/addons" "^6.5.14"
+    "@storybook/core-events" "^6.5.14"
     fast-deep-equal "^2.0.1"
 
 "@storybook/addon-ondevice-knobs@6.5.1":
