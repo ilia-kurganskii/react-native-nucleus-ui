@@ -1994,10 +1994,10 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-ondevice-actions@6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.1.tgz#6f4903d16dfab83727f963d58597b8c5bdae9f38"
-  integrity sha512-dyKErK97sT+cd5ApGSYHQokMK+GHLaucrJ/LhHtPxWwMHulaV17Pyzbb8FE550DF3YNXjkcZZjMMJlc/1QmgCQ==
+"@storybook/addon-ondevice-actions@6.5.2":
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.2.tgz#18efc75198656edb0f1974861f44df7b5c6c7a2f"
+  integrity sha512-xccsu0gQAHUE1uZR9nmq3PMjo6znutFtm1Wve7ms0qGp1KQn2UaqzVu/oRuQoGjLqyDqJ+aoFqAtgVFgbZ4rCA==
   dependencies:
     "@storybook/addons" "^6.5.14"
     "@storybook/core-events" "^6.5.14"
