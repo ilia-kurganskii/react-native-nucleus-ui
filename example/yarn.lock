@@ -2003,10 +2003,10 @@
     "@storybook/core-events" "^6.5.14"
     fast-deep-equal "^2.0.1"
 
-"@storybook/addon-ondevice-knobs@6.5.1":
-  version "6.5.1"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.1.tgz#e312e636618254a3ad7f26f7914aa073195db990"
-  integrity sha512-1qO8FFnt9KeRcAZ+peSwldKHv/y7wab5lV0VneNHbUVMqAJ+a7/3JP51JHVqAN6Pb+RNEE50XHJZ6FdYgJAS7Q==
+"@storybook/addon-ondevice-knobs@6.5.2":
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.2.tgz#547de23f472c40e6d112f5c95582b5bdd7c4dbd2"
+  integrity sha512-vtAAvwG/0ermE5negbP2ghLgpMjLU3EBoUgF6zkJDpIi/WVQx1kQTdQiXyA+CL/zggaH/q38L0ZUal9ibhOioQ==
   dependencies:
     "@emotion/native" "^10.0.14"
     "@storybook/addons" "^6.5.14"
