@@ -38,7 +38,7 @@
     "@storybook/addon-ondevice-knobs": "6.5.2",
     "@storybook/channel-websocket": "6.5.16",
     "@storybook/react-native": "5.3.27",
-    "@storybook/react-native-server": "5.3.23",
+    "@storybook/react-native-server": "6.5.2",
     "@types/jest": "29.5.0",
     "@types/jest-image-snapshot": "6.1.0",
     "@types/pixelmatch": "5.2.4",
