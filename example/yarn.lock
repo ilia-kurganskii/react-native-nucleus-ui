@@ -1976,10 +1976,10 @@
     ts-dedent "^2.0.0"
     uuid "^9.0.0"
 
-"@storybook/addon-knobs@7.0.0":
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-7.0.0.tgz#a5678ef95d267e446729e3ea8ea783715eda764f"
-  integrity sha512-HLmRBYi9hE6260RwQ563/aSYjcPICZhqu1ad6U5dVFfnlKtvbXD39obw70uUTUISSmR3sp0ncUGVw9sIV8m5ag==
+"@storybook/addon-knobs@7.0.2":
+  version "7.0.2"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-7.0.2.tgz#f28fd180d8a283df6eb67f8f2578f1563b7b7615"
+  integrity sha512-PzKuscxcBPhA2jpDxJ/F+BvBRqHJ8qBki1kS1IOjmJbAfE96WFnweXZ73ImyAJnRtmtReCL6p0ZmFkrNDMDpUw==
   dependencies:
     copy-to-clipboard "^3.3.3"
     core-js "^3.29.0"
