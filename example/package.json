@@ -32,7 +32,7 @@
     "@babel/runtime": "7.21.0",
     "@react-native-community/eslint-config": "3.2.0",
     "@storybook/addon-actions": "7.0.7",
-    "@storybook/addon-knobs": "7.0.0",
+    "@storybook/addon-knobs": "7.0.2",
     "@storybook/addon-links": "7.0.7",
     "@storybook/addon-ondevice-actions": "6.5.3",
     "@storybook/addon-ondevice-knobs": "6.5.3",
