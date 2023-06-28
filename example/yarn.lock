@@ -2123,19 +2123,19 @@
     prop-types "^15.7.2"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-ondevice-actions@6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.3.tgz#14a204ab09bb758f0e9cc9c2f2156a3427394490"
-  integrity sha512-kxQme4syTh7Du9MT0BGS+sJG9taPFrfnxwzqRuYPXlQavkcGM1XDpOcmfkQ+FO5EhtUJDNuClI+9ryw80oxs9A==
+"@storybook/addon-ondevice-actions@6.5.4":
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.4.tgz#5f87ffcb5d255bd08b81e044498316fb59476e76"
+  integrity sha512-4ZN+eiYLzeBZyj7B+Ujda7N1pOFm63S8RWrgscjwdka/3+eQ8i0zRRndKeiM7jSBLlhUfd8MyCQ2l6ooScToBg==
   dependencies:
     "@storybook/addons" "^6.5.14"
     "@storybook/core-events" "^6.5.14"
     fast-deep-equal "^2.0.1"
 
-"@storybook/addon-ondevice-knobs@6.5.3":
-  version "6.5.3"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.3.tgz#6d098cc7995df9b98870433d7e79b4125c89ebea"
-  integrity sha512-DIw0uaP4xJf+psuHi/s971JBc7n1OAI2NhlR3iqrOIoca4dTIH0NllDOrYDoIJ6OYkrmvf+qINGWEJGwZaLGzQ==
+"@storybook/addon-ondevice-knobs@6.5.4":
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.4.tgz#d43efe19781ea528b1bb4d68d802f8547dde5a4c"
+  integrity sha512-sapMmWp3Ytx4JHlNvQvJ9Ag+yYAsJiLVrprAlncTLAonzjAMW4vahOab9b/LgRjF9w0WRsVDOcEqjJNPwF+f7Q==
   dependencies:
     "@emotion/native" "^10.0.14"
     "@storybook/addons" "^6.5.14"
