@@ -46,7 +46,7 @@
     "@types/react-test-renderer": "17.0.2",
     "@typescript-eslint/eslint-plugin": "5.61.0",
     "@typescript-eslint/parser": "5.61.0",
-    "babel-jest": "29.5.0",
+    "babel-jest": "29.6.0",
     "babel-loader": "9.1.2",
     "babel-plugin-module-resolver": "4.1.0",
     "detox": "20.10.0",
