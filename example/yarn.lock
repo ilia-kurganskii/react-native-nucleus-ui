@@ -8178,16 +8178,15 @@ jest-haste-map@^29.6.1:
   optionalDependencies:
     fsevents "^2.3.2"
 
-jest-image-snapshot@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-6.1.0.tgz#96a17b00530e1358eae657f6c9bb948e29ee7510"
-  integrity sha512-LZYoks6V1HAkYqyi80gUjMWVsa++Oy0fckAGMLBQseVweZT9AmJNKAINwHLqX1fpeMy2hTG5CCEe4IUX2N3Nmg==
+jest-image-snapshot@6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/jest-image-snapshot/-/jest-image-snapshot-6.2.0.tgz#b6bfc3e1585ec14b2b0595daf537ae1b4d7f8d13"
+  integrity sha512-9mTHBKiiSIZ26csbLmjKyN+SrVypM93S5y+jULCvn6YItgepvcrJIKGNeSyt9d2EZiutOroLs/UjtrWiBzpHbA==
   dependencies:
     chalk "^4.0.0"
     get-stdin "^5.0.1"
     glur "^1.1.2"
     lodash "^4.17.4"
-    mkdirp "^0.5.1"
     pixelmatch "^5.1.0"
     pngjs "^3.4.0"
     rimraf "^2.6.2"
