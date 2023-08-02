@@ -1274,12 +1274,26 @@
   dependencies:
     "@emotion/primitives-core" "10.0.27"
 
+"@emotion/native@^11.11.0":
+  version "11.11.0"
+  resolved "https://registry.yarnpkg.com/@emotion/native/-/native-11.11.0.tgz#1584a9ff12d8a069a1089601205b53ec4c4e757e"
+  integrity sha512-t1b5bLv+o5OUNLqXlnw+LJYU10OpmYkLC/1W873Y1ohG+vObx5TT3o3Eh1okXb2KCuZTTBPgsEnU/Sl7NNkJ9Q==
+  dependencies:
+    "@emotion/primitives-core" "^11.11.0"
+
 "@emotion/primitives-core@10.0.27":
   version "10.0.27"
   resolved "https://registry.yarnpkg.com/@emotion/primitives-core/-/primitives-core-10.0.27.tgz#7a5fae07fe06a046ced597f5c0048f22d5c45842"
   integrity sha512-fRBEDNPSFFOrBJ0OcheuElayrNTNdLF9DzMxtL0sFgsCFvvadlzwJHhJMSwEJuxwARm9GhVLr1p8G8JGkK98lQ==
   dependencies:
     css-to-react-native "^2.2.1"
+
+"@emotion/primitives-core@^11.11.0":
+  version "11.11.0"
+  resolved "https://registry.yarnpkg.com/@emotion/primitives-core/-/primitives-core-11.11.0.tgz#76008af273f57ee1048e6bc8540c863833327b16"
+  integrity sha512-cTVsAe7Y5E/RRoHnWDh6ZE3aPHOuuUDqIkSibJ+tz/wFZizkqg+VNcKvTLU6DFRMXH+NhNWdyhzldJ9PUY9/vA==
+  dependencies:
+    css-to-react-native "^3.0.0"
 
 "@emotion/react@^11.8.1":
   version "11.11.1"
@@ -2127,21 +2141,21 @@
     prop-types "^15.7.2"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-ondevice-actions@6.5.4":
-  version "6.5.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.4.tgz#5f87ffcb5d255bd08b81e044498316fb59476e76"
-  integrity sha512-4ZN+eiYLzeBZyj7B+Ujda7N1pOFm63S8RWrgscjwdka/3+eQ8i0zRRndKeiM7jSBLlhUfd8MyCQ2l6ooScToBg==
+"@storybook/addon-ondevice-actions@6.5.5":
+  version "6.5.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.5.tgz#ae30b00da4b7cd37c485248db63d8df464885f52"
+  integrity sha512-M0hBXs4Mz2y68qHbnjiCxwHOMsPh2njvqKM4mhNQBPU8GNKfZ7g0ZqbveIpq9My2KCMf5eZ6BltyAJuEMZCtag==
   dependencies:
     "@storybook/addons" "^6.5.14"
     "@storybook/core-events" "^6.5.14"
     fast-deep-equal "^2.0.1"
 
-"@storybook/addon-ondevice-knobs@6.5.4":
-  version "6.5.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.4.tgz#d43efe19781ea528b1bb4d68d802f8547dde5a4c"
-  integrity sha512-sapMmWp3Ytx4JHlNvQvJ9Ag+yYAsJiLVrprAlncTLAonzjAMW4vahOab9b/LgRjF9w0WRsVDOcEqjJNPwF+f7Q==
+"@storybook/addon-ondevice-knobs@6.5.5":
+  version "6.5.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.5.tgz#8f8e4a55c81b6ef7e3f44820a665551266f64282"
+  integrity sha512-wa1YtkOnC1EPC/aJPvBJzknS+MKRTxziHP7dYjQB1EdmzsSsact9K6RKQ/sxr94fn9OnNYRNL1cxXPYwP5g0Rg==
   dependencies:
-    "@emotion/native" "^10.0.14"
+    "@emotion/native" "^11.11.0"
     "@storybook/addons" "^6.5.14"
     "@storybook/core-events" "^6.5.14"
     core-js "^3.0.1"
@@ -5312,6 +5326,15 @@ css-to-react-native@^2.2.1:
     camelize "^1.0.0"
     css-color-keywords "^1.0.0"
     postcss-value-parser "^3.3.0"
+
+css-to-react-native@^3.0.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/css-to-react-native/-/css-to-react-native-3.2.0.tgz#cdd8099f71024e149e4f6fe17a7d46ecd55f1e32"
+  integrity sha512-e8RKaLXMOFii+02mOlqwjbD00KSEKqblnpO9e++1aXS1fPQOpS1YoqdVHBqPjHNoxeF2mimzVqawm2KCbEdtHQ==
+  dependencies:
+    camelize "^1.0.0"
+    css-color-keywords "^1.0.0"
+    postcss-value-parser "^4.0.2"
 
 css-what@^6.0.1:
   version "6.1.0"
@@ -10453,7 +10476,7 @@ postcss-value-parser@^3.3.0:
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha512-pISE66AbVkp4fDQ7VHBwRNXzAAKJjw4Vw7nWI/+Q3vuly7SNfgYXvm6i5IgFylHGK5sP/xHAbB7N49OS4gWNyQ==
 
-postcss-value-parser@^4.1.0:
+postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-4.2.0.tgz#723c09920836ba6d3e5af019f92bc0971c02e514"
   integrity sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==
