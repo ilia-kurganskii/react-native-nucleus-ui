@@ -2209,23 +2209,23 @@
     prop-types "^15.7.2"
     ts-dedent "^2.0.0"
 
-"@storybook/addon-ondevice-actions@6.5.6":
-  version "6.5.6"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.6.tgz#a7895a26b3879b9a228e45c7fc9bbf79c677167b"
-  integrity sha512-AgOfcwtzC4TVTN5T7lJ3VQkr0bcbC9j7rKwX/Vr8kne7G4SW6hZEDsfJWfzSLLwrO4NMiCefGXibpTV+IB+T9w==
+"@storybook/addon-ondevice-actions@6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-actions/-/addon-ondevice-actions-6.5.7.tgz#57ad627c0e997722246f475e9a273ea013e1f189"
+  integrity sha512-Zrk75yQbJ3fOf/e5XROeBYfT/UYz24he+LWNicIajNTPRz+YhnOmWedWYF/vEVQ+exnAi3U4cFkX3qUq9blI3w==
   dependencies:
     "@storybook/addons" "^6.5.14"
     "@storybook/core-events" "^6.5.14"
     fast-deep-equal "^2.0.1"
 
-"@storybook/addon-ondevice-knobs@6.5.6":
-  version "6.5.6"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.6.tgz#103ecf26415b4ac2c58aecf75d9d473ec2da145d"
-  integrity sha512-9voAgzD0RBZ4oTlUXKmlmkmllywx2TTGDV1iZeAE1GWSuqqok1X2fOKRLVSqvQTsJmEqFg/1sKuLC9ay2tvXlA==
+"@storybook/addon-ondevice-knobs@6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-ondevice-knobs/-/addon-ondevice-knobs-6.5.7.tgz#222613b1f25c1cf92a261272d18b8da55bae078c"
+  integrity sha512-SVgFVfHI4+9qtfojtwowSnFNivcRqc61vTTNxjajiVSHiSIQfqYZI5hrgkrr53TIguh6xB93sit0oBwtxA2Lug==
   dependencies:
     "@storybook/addons" "^6.5.14"
     "@storybook/core-events" "^6.5.14"
-    "@storybook/react-native-theming" "^6.5.6"
+    "@storybook/react-native-theming" "^6.5.7"
     core-js "^3.0.1"
     deep-equal "^1.0.1"
     prop-types "^15.7.2"
@@ -2660,10 +2660,10 @@
     webpack "^4.33.0"
     ws "^7.1.2"
 
-"@storybook/react-native-theming@^6.5.6":
-  version "6.5.6"
-  resolved "https://registry.yarnpkg.com/@storybook/react-native-theming/-/react-native-theming-6.5.6.tgz#e10953d8265e6e6b752440a84334a671a38e04ab"
-  integrity sha512-SP7Y0meSjQxg6FtB0JWu4LLPBWPHYX6SgbFWzLbowzUSM8bkmoNsmFQjroVseuAtYRIXiIkKJuPMFhm/dtAGCw==
+"@storybook/react-native-theming@^6.5.7":
+  version "6.5.7"
+  resolved "https://registry.yarnpkg.com/@storybook/react-native-theming/-/react-native-theming-6.5.7.tgz#8c40ca99546c51bbafb9584cc036308c20d41924"
+  integrity sha512-wvNQvpmSFwnuH4VSLKlS4z/YFiRf+CuCMpxnRWrnrbXtah8HtsWzP2sYNrtGadhneA/jS0zkHXPCsDx/lIjw9A==
 
 "@storybook/react-native@5.3.27":
   version "5.3.27"
