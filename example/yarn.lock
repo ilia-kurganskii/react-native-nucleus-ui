@@ -2952,10 +2952,10 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest-image-snapshot@6.2.3":
-  version "6.2.3"
-  resolved "https://registry.yarnpkg.com/@types/jest-image-snapshot/-/jest-image-snapshot-6.2.3.tgz#feb86722e7d58a82a377ca634b9e0f37e4a7fc89"
-  integrity sha512-Lf6JNr3R+KzxfoGlxrxrbRBMBAsVADa1khItphouPOHqz6tyXoX6CeYeWMVETzV8lupc9r2Hho6hchhZH7ZdJA==
+"@types/jest-image-snapshot@6.3.0":
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/@types/jest-image-snapshot/-/jest-image-snapshot-6.3.0.tgz#719dea56556db18bac8b7234595e315dcf6cc3e0"
+  integrity sha512-YZuZ1asbK3pK6+wzlhvs3vQ/FkvaWJfX7tTiha6TB5EOqPUSzYxheoodiCvOgIcX89NSlbJ4mMCKoVx6XMRVUA==
   dependencies:
     "@types/jest" "*"
     "@types/pixelmatch" "*"
