@@ -40,7 +40,7 @@
     "@storybook/react-native": "5.3.27",
     "@storybook/react-native-server": "5.3.23",
     "@types/jest": "29.5.10",
-    "@types/jest-image-snapshot": "6.2.3",
+    "@types/jest-image-snapshot": "6.3.0",
     "@types/pixelmatch": "5.2.6",
     "@types/react-native": "0.67.12",
     "@types/react-test-renderer": "17.0.2",
