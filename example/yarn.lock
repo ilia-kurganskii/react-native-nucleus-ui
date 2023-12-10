@@ -5695,10 +5695,10 @@ detect-port@^1.3.0:
     address "^1.0.1"
     debug "4"
 
-detox@20.13.5:
-  version "20.13.5"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.13.5.tgz#5093916d9dfbca75b63ac27915c4e728967c5ef0"
-  integrity sha512-V0t1QuRI5rsiXEPBakjjjGGo8Y5kLi4KXhLrcvnpO8id6m7UtObj91wj+4cCnMRX2eSohXu9wR+HbD6IKcO9sA==
+detox@20.14.0:
+  version "20.14.0"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.14.0.tgz#88cddffaeb0903875c21e04347879f93e84c6a04"
+  integrity sha512-mQoN2xy9IeFu5OUgm3KngRd8mwP5Ef42CpTbA/lCpS8bJr5fFWPlWxeYdf5nkPmhNriKSr3wCq9BI/l9gjwp8w==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
