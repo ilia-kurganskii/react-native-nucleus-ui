@@ -5731,10 +5731,10 @@ detect-port@^1.3.0:
     address "^1.0.1"
     debug "4"
 
-detox@20.14.1:
-  version "20.14.1"
-  resolved "https://registry.yarnpkg.com/detox/-/detox-20.14.1.tgz#de2adff46a674f116f8ec2290e6ebd4d4db34915"
-  integrity sha512-hwtZ0TSmhw35xK86F3uUgSJ6IB98o1kQg4utpYhrIcXL3Qnuogxyy/7WOI6XUW0CK8+EIk8kBgzC7aZ/HWzPtQ==
+detox@20.14.2:
+  version "20.14.2"
+  resolved "https://registry.yarnpkg.com/detox/-/detox-20.14.2.tgz#541dae0a7a914b03bbc01c6aef6c8f715368fdd2"
+  integrity sha512-huNAiUy1mUxHwz2Idoku/hN1KmsOFX0DhwAL1P+4ByP1Zx55PK5sjhg3j8EZwptgyV+aUWaXAHI0McUNmqMjOw==
   dependencies:
     ajv "^8.6.3"
     bunyan "^1.8.12"
