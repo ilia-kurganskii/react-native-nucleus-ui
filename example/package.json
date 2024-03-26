@@ -43,7 +43,7 @@
     "@types/jest-image-snapshot": "6.4.0",
     "@types/pixelmatch": "5.2.6",
     "@types/react-native": "0.67.12",
-    "@types/react-test-renderer": "17.0.2",
+    "@types/react-test-renderer": "17.0.9",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
     "babel-jest": "29.7.0",
