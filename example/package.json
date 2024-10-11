@@ -39,7 +39,7 @@
     "@storybook/channel-websocket": "7.0.27",
     "@storybook/react-native": "5.3.27",
     "@storybook/react-native-server": "5.3.23",
-    "@types/jest": "29.5.12",
+    "@types/jest": "29.5.13",
     "@types/jest-image-snapshot": "6.4.0",
     "@types/pixelmatch": "5.2.6",
     "@types/react-native": "0.67.12",
