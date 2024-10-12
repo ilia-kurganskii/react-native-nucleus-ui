@@ -2234,12 +2234,11 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@storybook/addon-actions@7.6.20":
-  version "7.6.20"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-7.6.20.tgz#4264d1fba6e889f28f717ebb23c55b7d774a2f60"
-  integrity sha512-c/GkEQ2U9BC/Ew/IMdh+zvsh4N6y6n7Zsn2GIhJgcu9YEAa5aF2a9/pNgEGBMOABH959XE8DAOMERw/5qiLR8g==
+"@storybook/addon-actions@8.3.5":
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-8.3.5.tgz#03fdb891114439ed47cb7df6ef21826530449db7"
+  integrity sha512-t8D5oo+4XfD+F8091wLa2y/CDd/W2lExCeol5Vm1tp5saO+u6f2/d7iykLhTowWV84Uohi3D073uFeyTAlGebg==
   dependencies:
-    "@storybook/core-events" "7.6.20"
     "@storybook/global" "^5.0.0"
     "@types/uuid" "^9.0.1"
     dequal "^2.0.2"
@@ -2263,12 +2262,12 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^5.7.0"
 
-"@storybook/addon-links@7.6.20":
-  version "7.6.20"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-7.6.20.tgz#c6bedc7bdc0112ce4cb3f1bfc701445df696598d"
-  integrity sha512-iomSnBD90CA4MinesYiJkFX2kb3P1Psd/a1Y0ghlFEsHD4uMId9iT6sx2s16DYMja0SlPkrbWYnGukqaCjZpRw==
+"@storybook/addon-links@8.3.5":
+  version "8.3.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-8.3.5.tgz#1621afd8be06af6de5e942644053d5136cc5bb83"
+  integrity sha512-giRCpn6cfJMYPnVJkojoQDO5ae6098fgY9YgAhwaJej/9dufNcioFdbiyfK1vyzbG6TGeTmJ9ncWCXgWRtzxPQ==
   dependencies:
-    "@storybook/csf" "^0.1.2"
+    "@storybook/csf" "^0.1.11"
     "@storybook/global" "^5.0.0"
     ts-dedent "^2.0.0"
 
@@ -2525,13 +2524,6 @@
   dependencies:
     ts-dedent "^2.0.0"
 
-"@storybook/core-events@7.6.20":
-  version "7.6.20"
-  resolved "https://registry.yarnpkg.com/@storybook/core-events/-/core-events-7.6.20.tgz#6648d661d1c96841a4c2a710a35759b01b6a06a1"
-  integrity sha512-tlVDuVbDiNkvPDFAu+0ou3xBBYbx9zUURQz4G9fAq0ScgBOs/bpzcRrFb4mLpemUViBAd47tfZKdH4MAX45KVQ==
-  dependencies:
-    ts-dedent "^2.0.0"
-
 "@storybook/core@5.3.21":
   version "5.3.21"
   resolved "https://registry.yarnpkg.com/@storybook/core/-/core-5.3.21.tgz#da963166ea24601f318266a3aa6bbc06fc8fb175"
@@ -2625,7 +2617,7 @@
   dependencies:
     lodash "^4.17.15"
 
-"@storybook/csf@^0.1.2":
+"@storybook/csf@^0.1.11":
   version "0.1.11"
   resolved "https://registry.yarnpkg.com/@storybook/csf/-/csf-0.1.11.tgz#ad685a4fe564a47a6b73571c2e7c07b526f4f71b"
   integrity sha512-dHYFQH3mA+EtnCkHXzicbLgsvzYjcDJ1JWsogbItZogkPHgSJM/Wr71uMkcvw8v9mmCyP4NpXJuu6bPoVsOnzg==
