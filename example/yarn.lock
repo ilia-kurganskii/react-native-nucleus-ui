@@ -2246,10 +2246,10 @@
     polished "^4.2.2"
     uuid "^9.0.0"
 
-"@storybook/addon-knobs@7.0.2":
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-7.0.2.tgz#f28fd180d8a283df6eb67f8f2578f1563b7b7615"
-  integrity sha512-PzKuscxcBPhA2jpDxJ/F+BvBRqHJ8qBki1kS1IOjmJbAfE96WFnweXZ73ImyAJnRtmtReCL6p0ZmFkrNDMDpUw==
+"@storybook/addon-knobs@7.1.1":
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-knobs/-/addon-knobs-7.1.1.tgz#39a8676f0d96ce7a062731c521096774ef3dfee2"
+  integrity sha512-sgTBqXPsLROcA1qdIXH8YsmeXzO975tK70QVYYvPkQJxGihCg3BtyxKxdulkfcVLkaAPQcvzbtooE6rrH/oJdQ==
   dependencies:
     copy-to-clipboard "^3.3.3"
     core-js "^3.29.0"
