@@ -2268,20 +2268,19 @@
   dependencies:
     "@types/react" "^17"
 
-"@types/react-test-renderer@17.0.2":
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-17.0.2.tgz#5f800a39b12ac8d2a2149e7e1885215bcf4edbbf"
-  integrity sha512-+F1KONQTBHDBBhbHuT2GNydeMpPuviduXIVJRB7Y4nma4NR5DrTJfMMZ+jbhEHbpwL+Uqhs1WXh4KHiyrtYTPg==
+"@types/react-test-renderer@18.3.0":
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/@types/react-test-renderer/-/react-test-renderer-18.3.0.tgz#839502eae70058a4ae161f63385a8e7929cef4c0"
+  integrity sha512-HW4MuEYxfDbOHQsVlY/XtOvNHftCVEPhJF2pQXXwcUiUF+Oyb0usgp48HSgpK5rt8m9KZb22yqOeZm+rrVG8gw==
   dependencies:
-    "@types/react" "^17"
+    "@types/react" "*"
 
-"@types/react@17.0.53":
-  version "17.0.53"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.53.tgz#10d4d5999b8af3d6bc6a9369d7eb953da82442ab"
-  integrity sha512-1yIpQR2zdYu1Z/dc1OxC+MA6GR240u3gcnP4l6mvj/PJiVaqHsQPmWttsvHsfnhfPbU2FuGmo0wSITPygjBmsw==
+"@types/react@*", "@types/react@18.3.11":
+  version "18.3.11"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.3.11.tgz#9d530601ff843ee0d7030d4227ea4360236bd537"
+  integrity sha512-r6QZ069rFTjrEYgFdOck1gK7FLVsgJE7tTz0pQBczlBNUhBNk0MQH4UbnFSwjpQLMkLzgqvBBa+qGpLje16eTQ==
   dependencies:
     "@types/prop-types" "*"
-    "@types/scheduler" "*"
     csstype "^3.0.2"
 
 "@types/react@^17":
@@ -8350,13 +8349,12 @@ react-shallow-renderer@16.14.1:
     object-assign "^4.1.1"
     react-is "^16.12.0 || ^17.0.0"
 
-react@17.0.2:
-  version "17.0.2"
-  resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
-  integrity sha512-gnhPt75i/dq/z3/6q/0asP78D0u592D5L1pd7M8P+dck6Fu/jJeL6iVVK23fptSUZj8Vjf++7wXA8UNclGQcbA==
+react@18.3.1:
+  version "18.3.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.1.tgz#49ab892009c53933625bd16b2533fc754cab2891"
+  integrity sha512-wS+hAgJShR0KhEvPJArfuPVN1+Hz1t0Y6n5jLrGQbkb4urgPE/0Rve+1kMB1v/oWgHgm4WIcV+i7F2pTVj+2iQ==
   dependencies:
     loose-envify "^1.1.0"
-    object-assign "^4.1.1"
 
 read-pkg-up@^3.0.0:
   version "3.0.0"
