@@ -8058,10 +8058,10 @@ plist@^3.0.2, plist@^3.0.5:
     base64-js "^1.5.1"
     xmlbuilder "^15.1.1"
 
-pod-install@0.3.2:
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.3.2.tgz#6747bfec6cf5f3107f8a228bc154611b39fa04bc"
-  integrity sha512-oDP1/4FoUYkiSf38EZ7VWmDvZF/UvQBglzS1Z63TMc8CADb66acYfUhl36pI5vbY7p4jdTAyIuedZKWp6AoB3w==
+pod-install@0.3.3:
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/pod-install/-/pod-install-0.3.3.tgz#12980d658f352e8a3db194e5b631a7dae123cb8a"
+  integrity sha512-DIFCFKaG0Z5Qhe2lAg9kPkvakQEN88yahK114rKKQP+Kjq3bmHK8oASv2uf0AhnLJHnetJp/iccYWa+v8ay0hw==
 
 posix-character-classes@^0.1.0:
   version "0.1.1"
