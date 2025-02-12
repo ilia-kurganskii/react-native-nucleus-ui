@@ -2290,10 +2290,10 @@
   dependencies:
     "@sinonjs/commons" "^3.0.0"
 
-"@storybook/addon-actions@8.5.4":
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-8.5.4.tgz#8d1cd697a96d85d0e4d235b094753b3ac5610871"
-  integrity sha512-b7dwmVWaiJJmPdNrCCuy5wPD1HsPNGHCH+O9XJDrQpZ4EFREAcoWurIztldy5PV7DOOeLlW5rXxtwEEN41emQg==
+"@storybook/addon-actions@8.5.5":
+  version "8.5.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-actions/-/addon-actions-8.5.5.tgz#9fa67f95f4852491fde217b36c7c2c9620073b52"
+  integrity sha512-XJtE69QBXROM0xvAAFohkwuBLLnuEFBvAnmsY4+pfk001BCEZf7UXDY/XKD3Ew/Uou6o7oco7RmStycSlXU2Ng==
   dependencies:
     "@storybook/global" "^5.0.0"
     "@types/uuid" "^9.0.1"
@@ -2318,10 +2318,10 @@
     react-lifecycles-compat "^3.0.4"
     react-select "^5.7.0"
 
-"@storybook/addon-links@8.5.4":
-  version "8.5.4"
-  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-8.5.4.tgz#ab0dcc30275b03c8cce2b92f822596dfad9f9dbb"
-  integrity sha512-t28NJXhtTGa4RbzGOWNoL0T9liqhdlVbq3wkhbpUgXI4ay5BA2bVsVUuO7vKDp26oNeaZDsSyWv78Gg7FoeVmQ==
+"@storybook/addon-links@8.5.5":
+  version "8.5.5"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-links/-/addon-links-8.5.5.tgz#594295032d0f29c0691a629f384a7beb4d060749"
+  integrity sha512-Ds0+/3+XBkfCAYqTxwslrzsJtTYWRLK1pKGoCJOhVqrL8WPbqpCYfB7Onk+f0t84JwNuIomB2ciq4mhLmzaaDA==
   dependencies:
     "@storybook/csf" "0.1.12"
     "@storybook/global" "^5.0.0"
