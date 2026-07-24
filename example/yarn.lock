@@ -11048,10 +11048,10 @@ react-devtools-core@^4.23.0:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-dom@19.0.0:
-  version "19.0.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.0.tgz#43446f1f01c65a4cd7f7588083e686a6726cfb57"
-  integrity sha512-4GV5sHFG0e/0AD4X+ySy6UJd3jVl1iNsNHdpad0qhABJ11twS3TTBnseqsKurKcsNqCEFeGL3uLpVChpIO3QfQ==
+react-dom@19.0.8:
+  version "19.0.8"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-19.0.8.tgz#192efc346ae5c98e5409ff3c4a2659b24fc51f13"
+  integrity sha512-AZ38kyYRWwwY2gSC/8+nnvdaNUH00hPbfpLvDjNxCM7Oslu3wRr0+5ChQCvfABdcKaSIYPECDNEOytbCAU8DjQ==
   dependencies:
     scheduler "^0.25.0"
 
